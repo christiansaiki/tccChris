@@ -1,0 +1,34 @@
+\select@language {brazil}
+\contentsline {figure}{\numberline {1}{\ignorespaces Diagrama de casos de uso representando os relacionamentos entre o administrador e o sistema de recomenda\IeC {\c c}\IeC {\~o}es.\relax }}{39}{figure.caption.13}
+\contentsline {figure}{\numberline {2}{\ignorespaces Diagrama Atividades - Registro de Avalia\IeC {\c c}\IeC {\~a}o\relax }}{40}{figure.caption.14}
+\contentsline {figure}{\numberline {3}{\ignorespaces Diagrama Atividades - Gerar Recomenda\IeC {\c c}\IeC {\~a}o\relax }}{41}{figure.caption.15}
+\contentsline {figure}{\numberline {4}{\ignorespaces Precis\IeC {\~a}o em fun\IeC {\c c}\IeC {\~a}o do tamanho da lista de recomenda\IeC {\c c}\IeC {\~o}es $N$\relax }}{63}{figure.caption.35}
+\contentsline {figure}{\numberline {5}{\ignorespaces Abrang\IeC {\^e}ncia em fun\IeC {\c c}\IeC {\~a}o do tamanho da lista de recomenda\IeC {\c c}\IeC {\~o}es $N$\relax }}{63}{figure.caption.36}
+\contentsline {figure}{\numberline {6}{\ignorespaces Medida $F_1$ em fun\IeC {\c c}\IeC {\~a}o do tamanho da lista de recomenda\IeC {\c c}\IeC {\~o}es $N$\relax }}{64}{figure.caption.37}
+\contentsline {figure}{\numberline {7}{\ignorespaces Tempo de execu\IeC {\c c}\IeC {\~a}o em fun\IeC {\c c}\IeC {\~a}o do tamanho da lista de recomenda\IeC {\c c}\IeC {\~o}es $N$\relax }}{64}{figure.caption.38}
+\contentsline {figure}{\numberline {8}{\ignorespaces Precis\IeC {\~a}o em fun\IeC {\c c}\IeC {\~a}o do percentual da base de aprendizado $T$\relax }}{65}{figure.caption.39}
+\contentsline {figure}{\numberline {9}{\ignorespaces Abrang\IeC {\^e}ncia em fun\IeC {\c c}\IeC {\~a}o do percentual da base de aprendizado $T$\relax }}{65}{figure.caption.40}
+\contentsline {figure}{\numberline {10}{\ignorespaces Medida $F_1$ em fun\IeC {\c c}\IeC {\~a}o do percentual da base de aprendizado $T$\relax }}{66}{figure.caption.41}
+\contentsline {figure}{\numberline {11}{\ignorespaces Tempo de execu\IeC {\c c}\IeC {\~a}o em fun\IeC {\c c}\IeC {\~a}o do percentual da base de aprendizado $T$\relax }}{66}{figure.caption.42}
+\contentsline {figure}{\numberline {12}{\ignorespaces Precis\IeC {\~a}o em fun\IeC {\c c}\IeC {\~a}o do percentual de avalia\IeC {\c c}\IeC {\~o}es ``escondidas'' $H$\relax }}{67}{figure.caption.43}
+\contentsline {figure}{\numberline {13}{\ignorespaces Abrang\IeC {\^e}ncia em fun\IeC {\c c}\IeC {\~a}o do percentual de avalia\IeC {\c c}\IeC {\~o}es ``escondidas'' $H$\relax }}{67}{figure.caption.44}
+\contentsline {figure}{\numberline {14}{\ignorespaces Medida $F_1$ em fun\IeC {\c c}\IeC {\~a}o do percentual de avalia\IeC {\c c}\IeC {\~o}es ``escondidas'' $H$\relax }}{68}{figure.caption.45}
+\contentsline {figure}{\numberline {15}{\ignorespaces Tempo de execu\IeC {\c c}\IeC {\~a}o em fun\IeC {\c c}\IeC {\~a}o do percentual de avalia\IeC {\c c}\IeC {\~o}es ``escondidas'' $H$\relax }}{68}{figure.caption.46}
+\contentsline {figure}{\numberline {16}{\ignorespaces Precis\IeC {\~a}o em fun\IeC {\c c}\IeC {\~a}o do valor m\IeC {\'\i }nimo para avalia\IeC {\c c}\IeC {\~o}es positivas $M$\relax }}{69}{figure.caption.47}
+\contentsline {figure}{\numberline {17}{\ignorespaces Percentual de avalia\IeC {\c c}\IeC {\~o}es por valor de $M$\relax }}{69}{figure.caption.48}
+\contentsline {figure}{\numberline {18}{\ignorespaces Abrang\IeC {\^e}ncia em fun\IeC {\c c}\IeC {\~a}o do valor m\IeC {\'\i }nimo para avalia\IeC {\c c}\IeC {\~o}es positivas $M$\relax }}{70}{figure.caption.49}
+\contentsline {figure}{\numberline {19}{\ignorespaces Medida $F_1$ em fun\IeC {\c c}\IeC {\~a}o do valor m\IeC {\'\i }nimo para avalia\IeC {\c c}\IeC {\~o}es positivas $M$\relax }}{70}{figure.caption.50}
+\contentsline {figure}{\numberline {20}{\ignorespaces Tempo de execu\IeC {\c c}\IeC {\~a}o em fun\IeC {\c c}\IeC {\~a}o do valor m\IeC {\'\i }nimo para avalia\IeC {\c c}\IeC {\~o}es positivas $M$\relax }}{71}{figure.caption.51}
+\contentsline {figure}{\numberline {21}{\ignorespaces Precis\IeC {\~a}o em fun\IeC {\c c}\IeC {\~a}o do n\IeC {\'u}mero de vizinhos mais pr\IeC {\'o}ximos $k$\relax }}{71}{figure.caption.52}
+\contentsline {figure}{\numberline {22}{\ignorespaces Abrang\IeC {\^e}ncia em fun\IeC {\c c}\IeC {\~a}o do n\IeC {\'u}mero de vizinhos mais pr\IeC {\'o}ximos $k$\relax }}{72}{figure.caption.53}
+\contentsline {figure}{\numberline {23}{\ignorespaces Medida $F_1$ em fun\IeC {\c c}\IeC {\~a}o do n\IeC {\'u}mero de vizinhos mais pr\IeC {\'o}ximos $k$\relax }}{72}{figure.caption.54}
+\contentsline {figure}{\numberline {24}{\ignorespaces Precis\IeC {\~a}o em fun\IeC {\c c}\IeC {\~a}o do tamanho da lista de recomenda\IeC {\c c}\IeC {\~o}es $N$ excluindo-se alguns atributos $f$\relax }}{73}{figure.caption.55}
+\contentsline {figure}{\numberline {25}{\ignorespaces Abrang\IeC {\^e}ncia em fun\IeC {\c c}\IeC {\~a}o do tamanho da lista de recomenda\IeC {\c c}\IeC {\~o}es $N$ excluindo-se alguns atributos $f$\relax }}{73}{figure.caption.56}
+\contentsline {figure}{\numberline {26}{\ignorespaces Medida $F_1$ em fun\IeC {\c c}\IeC {\~a}o do tamanho da lista de recomenda\IeC {\c c}\IeC {\~o}es $N$ excluindo-se alguns atributos $f$\relax }}{74}{figure.caption.57}
+\contentsline {figure}{\numberline {27}{\ignorespaces Precis\IeC {\~a}o em fun\IeC {\c c}\IeC {\~a}o do tamanho da lista de recomenda\IeC {\c c}\IeC {\~o}es $N$ para diferentes medidas $d^f$\relax }}{74}{figure.caption.58}
+\contentsline {figure}{\numberline {28}{\ignorespaces Abrang\IeC {\^e}ncia em fun\IeC {\c c}\IeC {\~a}o do tamanho da lista de recomenda\IeC {\c c}\IeC {\~o}es $N$ para diferentes medidas $d^f$\relax }}{75}{figure.caption.59}
+\contentsline {figure}{\numberline {29}{\ignorespaces Medida $F_1$ em fun\IeC {\c c}\IeC {\~a}o do tamanho da lista de recomenda\IeC {\c c}\IeC {\~o}es $N$ para diferentes medidas $d^f$\relax }}{75}{figure.caption.60}
+\contentsline {figure}{\numberline {30}{\ignorespaces Precis\IeC {\~a}o em fun\IeC {\c c}\IeC {\~a}o da quantidade de pesos $W$\relax }}{76}{figure.caption.61}
+\contentsline {figure}{\numberline {31}{\ignorespaces Abrang\IeC {\^e}ncia em fun\IeC {\c c}\IeC {\~a}o da quantidade de pesos $W$\relax }}{76}{figure.caption.62}
+\contentsline {figure}{\numberline {32}{\ignorespaces Medida $F_1$ em fun\IeC {\c c}\IeC {\~a}o da quantidade de pesos $W$\relax }}{77}{figure.caption.63}
+\contentsline {figure}{\numberline {33}{\ignorespaces Tempo de execu\IeC {\c c}\IeC {\~a}o em fun\IeC {\c c}\IeC {\~a}o da quantidade de pesos $W$\relax }}{77}{figure.caption.64}

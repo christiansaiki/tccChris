@@ -1,0 +1,334 @@
+%% abtex2-modelo-trabalho-academico.tex, v-1.9.2 laurocesar
+%% Copyright 2012-2014 by abnTeX2 group at http://abntex2.googlecode.com/ 
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%   http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2005/12/01 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%% 
+%% The Current Maintainer of this work is the abnTeX2 team, led
+%% by Lauro César Araujo. Further information are available on 
+%% http://abntex2.googlecode.com/
+%%
+%% This work consists of the files abntex2-modelo-trabalho-academico.tex,
+%% abntex2-modelo-include-comandos and abntex2-modelo-references.bib
+%%
+
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% abnTeX2: Modelo de Trabalho Academico (tese de doutorado, dissertacao de
+% mestrado e trabalhos monograficos em geral) em conformidade com 
+% ABNT NBR 14724:2011: Informacao e documentacao - Trabalhos academicos -
+% Apresentacao
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+
+\documentclass[
+	% -- opções da classe memoir --
+	12pt,				% tamanho da fonte
+	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	twoside,			% para impressão em verso e anverso. Oposto a oneside 
+	% oneside twoside twoside openright openany onecolumn twocolumn
+	a4paper,			% tamanho do papel. 
+	% -- opções da classe abntex2 --
+	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+	% -- opções do pacote babel --
+	english,			% idioma adicional para hifenização
+	french,				% idioma adicional para hifenização
+	spanish,			% idioma adicional para hifenização
+	brazil				% o último idioma é o principal do documento
+	]{abntex2}
+
+% ---
+% Pacotes básicos 
+% ---
+\usepackage{lmodern}			% Usa a fonte Latin Modern			
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{lastpage}			% Usado pela Ficha catalográfica
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+% ---
+
+%força tabelas a nao reposicionarem		
+\usepackage{placeins}
+
+
+% apendice
+%\usepackage[titletoc]{appendix}
+%\renewcommand\cftappendixname{\appendixname~}
+%\AtBeginDocument{\renewcommand\appendixname{New Name}}
+
+%%%CODE
+\usepackage{listings}
+\usepackage{caption}
+
+\lstset{literate=
+  {á}{{\'a~}}1 {é}{{\'e~}}1 {í}{{\'i~}}1 {ó}{{\'o~}}1 {ú}{{\'u~}}1
+  {ã}{{\~a~}}1 {ẽ}{{\~e~}}1 {ĩ}{{\~i~}}1 {õ}{{\~o~}}1 {ũ}{{\~u~}}1
+  {Á}{{\'A~}}1 {É}{{\'E~}}1 {Í}{{\'I~}}1 {Ó}{{\'O~}}1 {Ú}{{\'U~}}1
+  {à}{{\`a~}}1 {è}{{\`e~}}1 {ì}{{\`i~}}1 {ò}{{\`o~}}1 {ù}{{\`u~}}1
+  {À}{{\`A~}}1 {È}{{\'E~}}1 {Ì}{{\`I~}}1 {Ò}{{\`O~}}1 {Ù}{{\`U~}}1
+  {ä}{{\"a~}}1 {ë}{{\"e~}}1 {ï}{{\"i~}}1 {ö}{{\"o~}}1 {ü}{{\"u~}}1
+  {Ä}{{\"A~}}1 {Ë}{{\"E~}}1 {Ï}{{\"I~}}1 {Ö}{{\"O~}}1 {Ü}{{\"U~}}1
+  {â}{{\^a~}}1 {ê}{{\^e~}}1 {î}{{\^i~}}1 {ô}{{\^o~}}1 {û}{{\^u~}}1
+  {Â}{{\^A~}}1 {Ê}{{\^E~}}1 {Î}{{\^I~}}1 {Ô}{{\^O~}}1 {Û}{{\^U~}}1
+  {œ}{{\oe~}}1 {Œ}{{\OE~}}1 {æ}{{\ae~}}1 {Æ}{{\AE~}}1 {ß}{{\ss~}}1
+  {ç}{{\c c~}}1 {Ç}{{\c C~}}1 {ø}{{\o~}}1 {å}{{\r a~}}1 {Å}{{\r A~}}1
+  {€}{{\EUR~}}1 {£}{{\pounds~}}1
+}
+
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=bash,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,    % added this
+  tabsize=3
+}
+%\DeclareCaptionFormat{listing}{\rule{\dimexpr\textwidth+17pt\relax}{0.4pt}\par\vskip1pt#1#2#3}
+%\captionsetup[lstlisting]{format=listing,singlelinecheck=false, margin=0pt, font={sf},labelsep=space,labelfont=bf}
+
+\renewcommand{\lstlistingname}{Código}
+
+
+
+
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[num]{abntex2cite}	% Citações padrão ABNT
+
+% --- 
+% CONFIGURAÇÕES DE PACOTES
+% --- 
+\usepackage[maxfloats=40]{morefloats}
+
+\usepackage{amsmath}
+\usepackage{multirow}
+% helvetica no titulo dos capitulos
+%\usepackage[scaled]{helvet}
+\usepackage{tgheros}
+\renewcommand{\ABNTEXchapterfont}{\fontfamily{\sfdefault}\selectfont}
+\renewcommand{\ABNTEXchapterfontsize}{\HUGE}
+%real numbers
+\usepackage{amssymb}
+%\hyphenation{Recomendação}
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+% ---
+
+
+
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% ---
+\titulo{Proposta de algoritmo e desenvolvimento de biblioteca para sistemas de recomendação de produtos de lojas de comércio online}
+\autor{Antônio Guilherme Ferreira Viggiano \\ Fernando Fochi Silveira Araújo}
+\local{São Paulo, Brasil}
+\data{\today}
+\orientador{Prof. Dr. Fábio Gagliardi Cozman}
+\coorientador{}
+\instituicao{%
+  Universidade de São Paulo
+  \par
+  Escola Politécnica
+  \par
+  Trabalho de Conclusão de Curso}
+\tipotrabalho{Trabalho de Formatura}
+% O preambulo deve conter o tipo do trabalho, o objetivo, 
+% o nome da instituição e a área de concentração 
+\preambulo{Trabalho de Conclusão de Curso apresentado ao Departamento de Engenharia Mecatrônica da Escola Politécnica da Universidade de São Paulo com requisito parcial para obtenção do Grau de Engenheiro Mecatrônico.}
+% ---
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={recsys}{recommendation}{e-commerce}{sistemas de recomendação}{trabalho acadêmico}{varejo on-line}, 
+		colorlinks=true,       		% false: boxed links; true: colored links
+    	linkcolor=blue,          	% color of internal links
+    	citecolor=blue,        		% color of links to bibliography
+    	filecolor=magenta,      		% color of file links
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+% \pretextual
+
+\imprimircapa
+
+\imprimirfolhaderosto
+
+\input{fichacatalografica}
+%\pagebreak
+
+%\input{folha_de_aprovacao}
+%\pagebreak
+
+%\input{dedicatoria}
+%\pagebreak
+
+\input{agradecimentos}
+%\pagebreak
+
+\input{epigrafe}
+%\pagebreak
+
+\input{resumo_pt_br}
+%\pagebreak
+
+\input{abstract}
+%\pagebreak
+
+% inserir lista de tabelas
+% ---
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
+\listoffigures*
+\cleardoublepage
+
+% ---
+
+
+\input{lista-de-simbolos}
+% ---
+% inserir o sumario
+% ---
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+% ---
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+
+
+%inteligencia artificial
+%aprendizado computacional
+% comercio eletronico
+% produtos
+
+\input{introducao}
+%\pagebreak
+\input{motivacao}
+%\pagebreak
+\input{objetivos}
+%\pagebreak
+\input{estado-da-arte}
+%\pagebreak
+\input{metodologia}
+\input{requisitos}
+%\pagebreak
+\input{avaliacao}
+%\pagebreak
+\input{solucoes-propostas}
+%\pagebreak
+%\pagebreak
+\input{desenvolvimento}
+%\pagebreak
+\input{resultados}
+%\pagebreak
+\input{conclusao}
+%\input{cronograma}
+%\pagebreak
+%\input{andamento-do-projeto}
+%\pagebreak
+\appendix
+\input{documentacao}
+%\pagebreak
+%\input{sumario-final}
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+\postextual
+% ----------------------------------------------------------
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+\bibliography{bibliografia}
+\end{document}
