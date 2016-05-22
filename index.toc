@@ -29,3 +29,5 @@
 \contentsline {section}{\numberline {5.1}Discuss\IeC {\~a}o}{31}{section.5.1}
 \contentsline {section}{\numberline {5.2}Trabalhos futuros}{32}{section.5.2}
 \vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{35}{section*.11}
