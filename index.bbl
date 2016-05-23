@@ -1,11 +1,18 @@
 \providecommand{\abntreprintinfo}[1]{%
  \citeonline{#1}}
-\begin{thebibliography}{}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
 \providecommand{\abntrefinfo}[3]{}
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.5 }
 
-\bibitem{iterative-development}
+\bibitem[Jamison, Kolmos e Holgaard 2014]{jeeModels}
+\abntrefinfo{Jamison, Kolmos e Holgaard}{JAMISON; KOLMOS; HOLGAARD}{2014}
+{JAMISON, A.; KOLMOS, A.; HOLGAARD, J.~E. Hybrid learning, an integrative
+  approach to engineering education.
+\emph{Journal of Engineering Education}, ASEE, v.~103, n.~2, p. 253--273,
+  2014.}
+
+\bibitem[Larman e Basili 2003]{iterative-development}
 \abntrefinfo{Larman e Basili}{LARMAN; BASILI}{2003}
 {LARMAN, C.; BASILI, V.~R. Iterative and incremental development: A brief
   history.
@@ -13,27 +20,27 @@
   47--56, 2003.
 ISSN 0018-9162.}
 
-\bibitem{movielensdataset}
+\bibitem[MovieLens 1998]{movielensdataset}
 \abntrefinfo{MovieLens}{MOVIELENS}{1998}
 {MOVIELENS. \emph{MovieLens 100k Dataset}. 1998.
 Dispon{\'\i}vel em:
   \url{http://files.grouplens.org/datasets/movielens/ml-100k-README.txt}.}
 
-\bibitem{moviesggplot2dataset}
-\abntrefinfo{Wickham}{WICKHAM}{2006}
-{WICKHAM, H. \emph{Movies dataset}. 2006.
-Dispon{\'\i}vel em: \url{http://docs.ggplot2.org/0.9.3.1/movies.html}.}
+\bibitem[Ng]{ng1997preventing}
+\abntrefinfo{Ng}{NG}{}
+{NG, A.~Y. Preventing "overfitting" of cross-validation data. In:  . [S.l.:
+  s.n.].}
 
-\bibitem{symeonidis2007feature}
+\bibitem[Symeonidis, Nanopoulos e Manolopoulos 2007]{symeonidis2007feature}
 \abntrefinfo{Symeonidis, Nanopoulos e Manolopoulos}{SYMEONIDIS; NANOPOULOS;
   MANOLOPOULOS}{2007}
 {SYMEONIDIS, P.; NANOPOULOS, A.; MANOLOPOULOS, Y. Feature-weighted user model
   for recommender systems. In:  \emph{User Modeling 2007}. [S.l.]: Springer,
   2007. p. 97--106.}
 
-\bibitem{ng1997preventing}
-\abntrefinfo{Ng}{NG}{}
-{NG, A.~Y. Preventing "overfitting" of cross-validation data. In:  . [S.l.:
-  s.n.].}
+\bibitem[Wickham 2006]{moviesggplot2dataset}
+\abntrefinfo{Wickham}{WICKHAM}{2006}
+{WICKHAM, H. \emph{Movies dataset}. 2006.
+Dispon{\'\i}vel em: \url{http://docs.ggplot2.org/0.9.3.1/movies.html}.}
 
 \end{thebibliography}
