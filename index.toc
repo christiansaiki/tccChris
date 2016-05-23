@@ -19,10 +19,9 @@
 \contentsline {section}{\numberline {3.2}Levantamento das necessidades}{25}{section.3.2}
 \contentsline {section}{\numberline {3.3}Defini\IeC {\c c}\IeC {\~a}o de processos}{25}{section.3.3}
 \contentsline {section}{\numberline {3.4}Defini\IeC {\c c}\IeC {\~a}o de indicadores}{25}{section.3.4}
-\contentsline {section}{\numberline {3.5}Avalia\IeC {\c c}\IeC {\~a}o de Desempenho}{27}{section.3.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Levantamento das Necessidades}}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Vis\IeC {\~a}o Geral}{29}{section.4.1}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Contexto}}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}Identifica\IeC {\c c}\IeC {\~a}o dos Stakeholders}{29}{section.4.1}
 \contentsline {section}{\numberline {4.2}Departamento do PRO}{29}{section.4.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclus\IeC {\~a}o}}{31}{chapter.5}
