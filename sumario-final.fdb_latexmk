@@ -1,0 +1,11 @@
+# Fdb version 3
+["pdflatex"] 1471347324 "sumario-final.tex" "sumario-final.pdf" "sumario-final" 1471347333
+  "/etc/texmf/web2c/texmf.cnf" 1470109253 1101 af7716885e081ab43982cab7b4672c1a ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1392645748 31083 1dfd8bf685ce0009c40532fedf8a7c53 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1392645748 31083 1dfd8bf685ce0009c40532fedf8a7c53 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1470109379 3822873 dc83988c18855f620cf95a3998974046 ""
+  "sumario-final.aux" 1471347324 8 a94a2480d3289e625eea47cd1b285758 ""
+  "sumario-final.tex" 1470105745 23 18521b436f741576c0b5c5e22dd418be ""
+  (generated)
+  "sumario-final.log"
+  "sumario-final.pdf"

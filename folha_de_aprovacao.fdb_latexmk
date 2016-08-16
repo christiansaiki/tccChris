@@ -1,0 +1,11 @@
+# Fdb version 3
+["pdflatex"] 1471347300 "folha_de_aprovacao.tex" "folha_de_aprovacao.pdf" "folha_de_aprovacao" 1471347301
+  "/etc/texmf/web2c/texmf.cnf" 1470109253 1101 af7716885e081ab43982cab7b4672c1a ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1392645748 31083 1dfd8bf685ce0009c40532fedf8a7c53 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1392645748 31083 1dfd8bf685ce0009c40532fedf8a7c53 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1470109379 3822873 dc83988c18855f620cf95a3998974046 ""
+  "folha_de_aprovacao.aux" 1471347300 8 a94a2480d3289e625eea47cd1b285758 ""
+  "folha_de_aprovacao.tex" 1470105745 993 a6753ad499efa752c468cd7c046d54ab ""
+  (generated)
+  "folha_de_aprovacao.pdf"
+  "folha_de_aprovacao.log"

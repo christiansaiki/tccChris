@@ -1,0 +1,30 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.2)  16 AUG 2016 08:35
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**resumo_pt_br.tex
+(./resumo_pt_br.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+! Undefined control sequence.
+<argument> \absparsep 
+                      
+l.3 \setlength{\absparsep}{18pt}
+                                 % ajusta o espaçamento dos parágrafos do ...
+
+? X
+ 
+Here is how much of TeX's memory you used:
+ 6 strings out of 493304
+ 162 string characters out of 6139872
+ 51880 words of memory out of 5000000
+ 3565 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 5i,0n,2p,99b,8s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
+PDF statistics:
+ 0 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
