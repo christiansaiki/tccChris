@@ -2,6 +2,7 @@
 \chapter[Metodologia]{Metodologia}
 \label{chap:metodologia}
 Nesse capítulo será apresentado o método utilizado para o desenvolvimento do estudo que visa a tentativa de salvar a empresa Beeconnect. Conforme explicado nos Objetivos do trabalho de formatura, a intenção é provar que empresa possui um modelo de negócio que gera valor para os seus clientes e que seja sustentável. Serão utilizados os conceitos apresentados na revisão bibliográfica, principalmente os textos elaborados por \citeonline{leanstartup}, \citeonline{startupowners} e \citeonline{businessmodel}.
+
 A metodologia utilizada nesse trabalho de conclusão de curso foi dividida nos seguintes tópicos:
 \begin{enumerate}
 \item Mapear estado atual da startup
@@ -9,114 +10,39 @@ A metodologia utilizada nesse trabalho de conclusão de curso foi dividida nos s
 \item Desenhar os testes de hipóteses.
 \item Testar hipóteses.
 \item Analisar resultados e repetir o ciclo.
+\item Listar lições aprendidas.
 \end{enumerate}
 
 \section{Mapear estado atual da startup}
 \label{cha:mapear_estado}
-Conforme introduzido anteriormente o produto da empresa Beeconnect é o aplicativo com o mesmo o nome. Tal produto foi desenvolvido para as plataformas Android e iOS e consiste basicamente em um aplicativo para descontos em lojas físicas. O seu principal diferencial é a geolocalização indoor precisa com uso de um aparelho chamado beacon. Quando um usuário do aplicativo passar por um beacon ele pode receber uma notificação informando que ele recebeu um desconto especial em um produto relevante.
-
-Para mapear o estado atual da startup baseado no aplicativo Beeconnect foi utilizado o conceito do Canvas de Modelo de Negócio apresentado por \citeonline{businessmodel}. O autor então elaborou um canvas inicial baseado nas premissas iniciais da empresa: 
-
-\begin{figure}[H]
-\caption{Canvas de Modelo de Negócio inicial da Beeconnect}
-\centerline{\includegraphics[scale=0.25]{img/canvas_beeconnect_1}}
-\label{fig:canvas_beeconnect_1}
-\caption* {Fonte: Elaborado pelo autor}
-\end{figure}
-
-Foram detalhados então cada um dos nove blocos do Canvas de Modelo de Negócio.
-\subsection{Segmentos de Clientes}
-\label{cha:segmentos_de_clientes}
-Os segmentos de clientes para o aplicativo são:
-\begin{itemize}
-\item Varejistas de lojas físicas, que serão tratados daqui em diante como "Lojas": 
-\item Frequentadores de lojas físicas que gostam de descontos, que serão tratados aqui em diante como "Usuários": 
-\end{itemize}
-Deste modo verificou-se que o produto atende dois segmentos distintos porém dependentes, típico de um mercado Multilateral. Por exemplo: sem uma boa diversidade de Lojas dentro do aplicativo não há muitas opções de descontos para os Usuários.
-
-\subsection{Proposição de Valor}
-\label{cha:proposicao_de_valor}
-Dado que o produto atende um segmento multilateral de clientes ele tem que gerar valor para ambos os segmentos.
-\begin{itemize}
-\item Novo canal de relacionamento com o cliente: os lojas físicas tem no aplicativo uma nova plataforma para se comunicar com seus clientes. Elas podem enviar notificações para eles quando ele passar em um raio de quinhentos metros de uma de suas lojas, graças a tecnologia do GPS. Além disso, o cliente pode consultar as promoções de uma determinada loja sem precisar sair de casa.
-\item Fidelização do cliente: graças a tecnologia de beacon o lojista consegue saber quantas vezes cada cliente foi a sua loja a premiá-lo de acordo com isso seja com descontos ou com algum brinde.
-\item Descontos Exclusivos: é a principal proposta de valor para os Usuários. Mais uma vez graças a tecnologia de beacons o aplicativo consegue saber quando que o usuário está próximo de um determinado produto e oferecer um desconto exclusivo.
-\item Fácil acesso a informações das lojas físicas: o usuário pode facilmente consultar onde fica a loja de supermercado mais próxima a ele, ver seu endereço e já rapidamente colocar no endereço no GPS.
-\end{itemize}
-
-\subsection{Relacionamento com Cliente}
-\label{cha:relacionamento_com_cliente}
-Dado que as Lojas serão os clientes pagantes e o número é bem menor que o de usuários do aplicativo a empresa optou por oferecer uma comunicação personalizada com os varejistas e uma comunicação automatizada com os usuários. 
-
-\subsection{Canais}
-\label{cha:canais}
-Os principais canais são:
-\begin{itemize}
-\item Website: com o \textit{site} https://app.beeconnect.com.br/ é possível atender tanto o usuário quanto o lojista. Nele o lojista pode fazer fazer o gerenciamento das campanhas dentro do aplicativo. Já o usuário pode saber mais sobre o aplicativo.
-\item Facebook: a página do aplicativo no Facebook, https://www.facebook.com/beeconnectbr/, foi feita com o intuito de conseguir fazer campanhas para conseguir mais usuários para o aplicativo, mas também é um canal de interação com as Lojas dado que é possível, por exemplo, mencionar a loja em um publicação da página da Beeconnect.
-\item Relações Públicas: dado que a BC faz parte do grupo TM que possui uma assessoria de relações públicas há chances da BC aparecer em reportagens.
-\item Lojas de Aplicativos: as lojas de aplicativos \textit{App Store} do sistema operacional iOS e \textit{Play Store} do sistema operacional Android são de extrema importância pois são nelas que o usuário consegue baixar o aplicativo para o celular. 
-\item Email: Através do email marketing é possível se relacionar com os ususários já existentes para informá-los sobre novas lojas parceiras ou sobre descontos super especiais.
-\end{itemize}
-
-\subsection{Fluxos de Receita}
-\label{cha:fluxos_de_receita}
-A empresa optou por oferecer dois métodos de cobrança dos lojistas:
-\begin{itemize}
-\item Assinatura de R\$99 por mês por beacon por loja: assim se uma loja optar por utilizar 2 beacons ela terá que pagar R\$198 por mês. Nessa assinatura o lojista ganha acesso a todas as opções como enviar uma notificação assim que o cliente entra na loja, acesso ao número de visitantes que passaram pela loja, entre outras funcionalidades.
-\item Assinatura de R\$49 por mês por loja: a empresa optou por oferecer essa modalidade de assinatura para o caso do lojista não ver valor no uso dos beacons. Assim ele só conta com a funcionalidade de enviar notificações para os usuários estiverem a um raio de quinhentos metros de sua loja e disponibilizar seus produtos na vitrine virtual do aplicativo.
-\end{itemize}
-
-\subsection{Parcerias Chave}
-\label{cha:parcerias_chave}
-As parcerias-chave da Beeconnect são:
-\begin{itemize}
-\item Amazon Web Services: A Amazon Web Services, popularmente conhecida como AWS é o serviço de computação em nuvem da Amazon, maior site de compras \textit{online} dos Estados Unidos. A AWS é de fundamental importância para um negócio que envolve servidores, gracas a ela muitos negócios se tornam viáveis por é possível testar hipóteses sem gastar muito dinheiro para construir toda uma infraestrutura de servidores por trás. Com a AWS o empreendedor só paga por hora de máquina utilizada e dá para facilmente colocar uma máquina melhor caso a infraestrutura necessite para suportar um tráfego maior.
-\item Apple e Google: Um desenvolvedor de aplicativos pode se manter fora das lojas de aplicativos da Apple e do Google, entretanto se ele quiser ser levado a sério ele tem que passar por todo o trâmite de aprovação de seu aplicativo para poder disponibilizá-lo nas lojas oficiais. 
-\item Vendedor terceirizado: Um vendedor entrou em contato com a equipe pois ele acabou sabendo do produto e achou interessante. Ele acabou propondo vender o produto mediante a uma comissão de 20\% por venda. Dado que o time da BC é bem enxuto a equipe achou interessante a proposta dado que só haveria um custo variável por venda realizada.
-\item Techmob: Poucas empresas tem a chance de serem criadas dentro de um grupo que já possui startups lucrativas. A Techmob forneceu uma estrutura muito boa para o desenvolvimento da Beeconnect.
-\end{itemize}
-
-\subsection{Atividades Chave}
-\label{cha:parcerias_chave}
-As atividades Chave da Beeconnect são:
-\begin{itemize}
-\item Manutenção e constante melhoria do aplicativo: os desenvolvedores devem sempre estar atentos à mudanças nos sistemas operacionais. Por exemplo: em 2015 com o lançamento da versão 9 do sistema da Apple alguns códigos tiveram que ser alterados caso contrário o aplicativo não iria funcionar, o mesmo aconteceu para a versão \textit{Marshmallow} do sistema operacional da Google. Além disso, os desenvolvedores necessitam colocar mais funcionalidade ao aplicativo além de possibilitar a realização de testes A/B na interface para que ela seja a mais intuitiva possível.
-\item Divulgação do Aplicativo: O desafio conforme explicado por \citeonline{mcclure2007startup} é conseguir o meio mais barato de adquirir bastantes usuários. O custo de aquisição de usuários deve ser menor que a receita gerada por cada usuário.
-\item Venda do serviço para varejistas: Assim como a base de usuários tem que crescer, a base de lojas também deve crescer junto. Por se tratar de um negócio multilateral quanto mais lojas melhor para os usuários, assim como quanto mais usuários melhor é para as lojas.
-\end{itemize}
-
-\subsection{Recursos Chave}
-\label{cha:recursos_chave}
-Os Recursos Chave da Beeconnect são:
-\begin{itemize}
-\item Time: A equipe é bem qualificada, praticamente toda formada por engenheiros e estudantes de engenharia da Escola Politécnica da USP.
-\item Beacons: Os beacons são equipamentos pouco conhecidos no mercado brasileiro, entretanto, já estão sendo utilizados amplamente nos Estados Unidos. Esses aparelhos são relativamente baratos se comparados com outras ferramentas de localização interna. 
-\item Computação em nuvem: Conforme citado anteriormente a computação em nuvem permite que a empresa possa testar suas hipóteses e criar seus negócios sem que haja um investimento adiantado em servidores. Nesses servidores ficam os códigos responsáveis pela comunicação com o aplicativo e pela interação do usuário com o site da Beeconnect.
-\item Programa para comunicação com beacons: Os desenvolvedores tiveram que fazer um programa que possibilita a comunicação com beacons. Tal \textit{software} possibilita a comunicação entre o celular do usuário com o beacon, além disso, ele já envia para os servidores da Beeconnect qual beacon que o celular está captando, assim o servidor pode mandar uma promoção especial para o usuário que está naquela loja. Esse \textit{software} pode ser instalado em outras aplicações que queiram se comunicar com os beacons da Beeconnect.
-\end{itemize}
-
-\subsection{Estrutura de Custo}
-\label{cha:estrutura_de_custo}
-A Estrutura de Custo da Beeconnect é descrita abaixo:
-\begin{itemize}
-\item Time: A equipe é responsável pela maior parte dos custos da empresa. Com cerca de 12 membros no time, a Beeconnect gasta quase R\$100.000 em recursos humanos.
-\item Rateio do aluguel e despesas do escritório: A Techmob possui um escritório localizado na Rua Haddock Lobo. O aluguel e demais despesas do escritório são rateados proporcionalmente ao número de integrantes por empresa da Techmob.
-\item Beacons: Os aparelhos são importados da China. Cada aparelho sai por cerca de R\$100 já com impostos e frete.
-\item Marketing e Vendas: Nesse item podem ser considerados as custos das campanhas de marketing digital e físico bem como os gastos para visitar clientes.
-\item Mongo Lab: É o serviço de base de dados utilizado para guardar os dados dos usuários, campanhas, lojas. Gasta-se cerca de R\$600 por mês com esse serviço para armazenar até 40 Gb
-\item Redis Labs: É um outro serviço de base de dados, esse tipo de base é muito mais rápido pois ele um tipo de memória de acesso mais rápido, entretanto o custo de armazenamento é mais caro. Gasta-se cerca de R\$60 por mês para o armazenamento de até 0.5 Gb
-\item Github: é um serviço de armazenamento, versionamento e compartilhamento de código.
-\item AWS: Como dito anteriormente, é o serviço de computação em nuvem da Amazon. A Beeconnect utiliza cerca de 20 máquinas e gasta por volta de R\$1600 por mês.
-\end{itemize}
+Para mapear o estado atual da startup baseado no aplicativo Beeconnect foi utilizado o conceito do Canvas de Modelo de Negócio apresentado por \citeonline{businessmodel}.
+O autor com a ajuda dos demais membros da Beeconnect deverá elaborar no escritório da empresa um canvas de modelo de negócio que reflita o estado atual da empresa. 
 
 \section{Gerar hipóteses sobre a proposta de valor da empresa}
 \label{cha:gerar_hipoteses}
-Dada a situação inicial da empresa modelada no Canvas de Modelo de Negócio e o objetivo do trabalho de formatura de provar que a Beeconnect tem um modelo de negócio sustentável, o autor recorreu a literatura para buscar a melhor alternativa de solução para o problema. 
-Segudo a literatura o principal problema de uma startup é construir um produto que ninguém quer. Em outras palavras, o maior problema é o produto construído ou serviço prestado não gerar valor para seu cliente.
-Ficou evidente que era urgente verificar se o aplicativo gerava valor para seus usuários. Baseando-se no Canvas de Modelo de Negócio, nos itens Segmentos de Clientes e Proposição da Valor, foram elaboradas as seguintes hipóteses:
+Para gerar as hipóteses sobre a proposta de valor da empresa foram utilizados os conceitos de Validação do Cliente de \citeonline{startupowners}, o capítulo de Experimentação de Startups de \citeonline{leanstartup}, e os conceitos propostos por \citeonline{businessmodel} e \citeonline{valueproposition}.    
+
+Uma vez que o Canvas de Modelo de Negócio da Beeconnect estiver pronto o autor deverá se reunir com o professor André Fleury na Escola Politécnica para gerar as hipóteses sobre a proposta de valor da empresa. Tais suposições deverão conectar os blocos Segmentos de Clientes e Proposição de Valor.
+
+\section{Desenhar os testes de hipóteses}
+\label{cha:desenhar_hipoteses}
+Após gerar as hipóteses o autor também deverá recorrer a mentoria do professor André Fleury para que os testes realmente testem as hipóteses. Juntos os dois deverão desenhar os testes e as métricas que definirão se a Beeconnect passou ou não no teste. 
+Além disso o autor deverá se reunir com sua equipe para planejar como os testes serão implementados. A equipe terá que responder as perguntas abaixo para cada teste:
 \begin{itemize}
-\item Varejistas de lojas físicas tem interesse num novo canal de relacionamento com os clientes.
-\item Varejistas de lojas físicas tem interesse em fidelizar o cliente.
-\item Clientes que gostam de desconto tem interesse em fácil acesso às informações das lojas físicas.
+\item Quando o teste será realizado?
+\item Quem realizará o teste?
+\item Onde o teste será executado?
 \end{itemize}
+
+\section{Testar hipóteses}
+\label{cha:testar_hipoteses}
+Após planejar como realizar cada teste com o intuito de testar as hipóteses de valor, a equipe da Beeconnect deverá ir a campo responder cada uma das suposições geradas.
+
+\section{Analisar resultados e repetir ciclo}
+\label{cha:analisar_resultados}
+Uma vez que os testes forem realizados e os resultados obtidos o autor deverá checar se a Beeconnect passou ou não nos testes, ou seja, se as hipóteses foram provadas ou se foram refutadas. 
+Após tal análise o autor deverá se reunir novamente com o professor André Fleury para que juntos eles iterem novamente pelo ciclo de modo que mais hipóteses sejam provadas ou refutadas e que o modelo de negócio da Beeconnect fique mais claro.
+
+\section{Listar lições aprendidas}
+\label{cha:listar_licoes_aprendidas}
+De modo que o todo o aprendizado dos estudos e testes realizados no decorrer desse trabalho de conclusão de curso não fique perdido, será realizado um momento de reflexão para que o autor liste quais foram as lições aprendidas no decorrer dessa jornada. O autor deverá apontar os erros cometidos por ele e sua equipe durante o desenvolvimento da Beeconnect, bem como deverá apontar como a literatura recomenda para que outros empreendedores não cometam o mesmo erro.
