@@ -75,7 +75,7 @@ O produto criado foi um aplicativo de descontos chamado iShop, que utilizava a t
 \item Comunicação do celular com o beacon: O beacon é um aparelho passivo, ou seja, ele só emite um sinal mandando três informações: \textit{UUID}, \textit{Major} e \textit{Minor}. O \textit{UUID} é o identificador único universal, trata-se de um número hexadecimal de trinta e dois dígitos que para o caso dos beacons tem como propósito identificar uma rede de beacons. Já o \textit{Major} e \textit{Minor} são números inteiros que variam de 0 a 65535 que têm como objetivo identificar um beacon dentro da rede dele.
 \item Interação do usuário com o aplicativo: com o aplicativo o usuário consegue ver as ofertas mais relevantes para ele, consultar as lojas mais próximas a ele e gerar cupons de desconto.
 \item Comunicação do celular com o servidor: O aplicativo só funciona se o usuário estiver conectado a internet, seja por meio do 3G/4G ou via \textit{WiFi}. O servidor então manda para o celular as ofertas mais relevantes baseadas na localização do usuário enviada pelo celular. Além disso, o celular envia para o servidor qual beacon que ele está detectando para que o servidor decida ou não enviar uma notificação para o usuário.
-\item Interação do varejista com a plataforma: Para o varejista foi criada uma plataforma, um site, onde ele consegue gerenciar as informações e as promoções de cada loja. Tais dados são então salvos na base de dados e então disponibilizados para o aplicativo.
+\item Interação do varejista com a plataforma: Para o varejista foi criada uma plataforma, um site, ilustrado na \autoref{fig:plataforma_varejistas}, onde ele consegue gerenciar as informações e as promoções de cada loja. Tais dados são então salvos na base de dados e então disponibilizados para o aplicativo.
 \end{itemize}
 
 \begin{figure}[H]
@@ -83,6 +83,13 @@ O produto criado foi um aplicativo de descontos chamado iShop, que utilizava a t
 \centerline{\includegraphics[scale=0.75]{img/explicacaoBeeconnect}}
 \label{fig:explicacaoBeeconnect}
 \caption* {Fonte: Material de marketing da Beeconnect}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Plataforma para Varejistas}
+\centerline{\includegraphics[scale=0.25]{img/plataforma_varejistas}}
+\label{fig:plataforma_varejistas}
+\caption* {Fonte: https://app.beeconnect.com.br/}
 \end{figure}
 
 O primeiro piloto para testar esse produto foi realizado no McDonald's localizado na Riviera de São Lourenço. Foram disponbilizadas cinco ofertas para o aplicativo, desde McOfertas até sobremesas e bebidas.
@@ -96,19 +103,19 @@ Após a implementação dos beacons em todas as Minuto Pão de Açúcar, esperou
 
 \section{Definição do problema}
 \label{cha:definição_do_problema}
-A Beeconnect estava prestes a ser um projeto engavetado. A empresa já gastara cerca de meio milhão de reais no decorrer de um ano, entre os seus principais custos envolvem os recursos humanos. Dado que o time dessa startup era muito bem qualificado, praticamente todos os integrantes do time eram engenheiros formados ou estudantes de engenharia pela Escola Politécnica, e que havia outras frentes da Techmob que também necessitavam de recursos o Conselho da holding começou a pressionar a Beeconnect para gerar resultados, caso contrário, eles iriam começar a desmontar o time para suprirem outras áreas da holding.
+A Beeconnect estava prestes a ser um projeto engavetado. A empresa já gastara cerca de meio milhão de reais no decorrer de um ano, entre os seus principais custos envolvem os recursos humanos. Dado que o time dessa startup era muito bem qualificado, praticamente todos os integrantes do time eram engenheiros formados ou estudantes de engenharia pela Escola Politécnica, e que havia outras frentes da Techmob que também necessitavam de recursos, o Conselho da holding começou a pressionar a Beeconnect para gerar resultados, caso contrário, eles iriam começar a desmontar o time para suprirem outras áreas da holding.
 
 O principal problema é que a startup ainda não sabia se possuía um modelo de negócio sustentável e que gera valor para seus clientes. A empresa encontrava-se em momento no qual tinha um grande primeiro cliente, que entretanto estava em modo de testes, ou seja, não estava pagando.
 Todo o negócio da empresa começou sem ter um planejamento ou alguma base teórica para fomentar um desenvolvimento mais sólido do negócio. Tudo isso foi agravado pelo fato da empresa ter crescido em número de funcionários sem ter provado o modelo de negócio, o que acabou inflando os custos.
 
 A empresa sequer tinha feito um Canvas de Modelo de Negócio para que todos da equipe conseguissem ter uma visão geral do projeto e poderem opinar e iterar em cima do modelo. Dessa forma pelo fato da Beeconnect ter começado mal estruturada, praticamente um ano havia se passado e ainda não estava claro se a empresa deveria perseverar em seu modelo de negócio, pivotar para outro tipo de negócio ou simplesmente fechar a empresa e realocar os recursos para outras áreas.
 
-Além disso, faltavam mais lojas para validar a proposta de valor da Beeconnect no lado dos varejistas assim como faltavam mais usuários para verificar se eles enxergavam valor no aplicativo. A Beeconnect encontrava-se no clásssico problema do "Ovo e da Galinha", no qual os varejistas reclamavam que a base de usuários do aplicativo era muito pequena e só entrariam quando a base fosse maior. No caso dos usuários muitos faziam reclamações sobre o baixo número de lojas que os interessavam.
+Além disso, faltavam mais lojas para validar a proposta de valor da Beeconnect no lado dos varejistas assim como faltavam mais usuários para verificar se eles enxergavam valor no aplicativo. A Beeconnect encontrava-se no clássico problema do "Ovo e da Galinha", no qual os varejistas reclamavam que a base de usuários do aplicativo era muito pequena e só entrariam quando a base fosse maior. No caso dos usuários muitos faziam reclamações sobre o baixo número de lojas que os interessavam.
 
 \section[Objetivos]{Objetivos}
 \label{chap:objetivos}
 Dado o problema apresentado fica evidente que a Beeconnect precisa ser estruturada de modo a virar uma máquina de testar hipóteses para que a startup itere o mais rápido possível de forma a encontrar o seu modelo de negócio.
-A reestruturação deve visar responder se a Beeconnect gera valor para seus clientes, tanto para os varejistas quanto para os usuários do aplicativo. O modelo a ser seguido deverá seguir a literatura ligada ao empreendedorismo, principalmente a de \citeonline{leanstartup}, \citeonline{businessmodel} e \citeonline{startupowners}
+A reestruturação deve visar responder se a Beeconnect gera valor para seus clientes, tanto para os varejistas quanto para os usuários do aplicativo. Assim a empresa poderá aumentar seu investimento de forma a captar mais varejistas e usuários para o aplicativo. O modelo a ser seguido deverá seguir a literatura ligada ao empreendedorismo, principalmente a de \citeonline{leanstartup}, \citeonline{businessmodel} e \citeonline{startupowners}
 
 \section{Justificativa}
 \label{cha:justificativa}
