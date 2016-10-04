@@ -1,6 +1,25 @@
 %!TEX root = index.tex
 \chapter{Testes e Resultados}
 \label{cha:testes_e_resultados}
+Conforme introduzido anteriormente o produto da empresa Beeconnect é o aplicativo com o mesmo o nome. Tal produto foi desenvolvido para as plataformas Android e iOS e consiste basicamente em um aplicativo para descontos em lojas físicas. O seu principal diferencial é a geolocalização indoor precisa com uso de um aparelho chamado beacon. Quando um usuário do aplicativo passar por um beacon localizado dentro de uma loja parceira ele pode receber uma notificação informando que ele recebeu um desconto especial em um produto relevante ou receber um simples "Bem vindo" conforme mostrado na \autoref{fig:bemvindo_beeconnect}.
+
+\begin{figure}[H]
+\caption{Exemplo de notificação do aplicativo Beeconnect}
+\centerline{\includegraphics[scale=0.25]{img/bemvindo_beeconnect}}
+\label{fig:bemvindo_beeconnect}
+\caption* {Fonte: https://app.beeconnect.com.br/}
+\end{figure}
+
+Até o momento em que os testes foram realizados a Beeconnect contava com cerca de 2000 downloads do aplicativo, 1600 usuários cadastrados e 10 empresas parceiras. Um dos problemas é que nenhuma loja ainda estava disposta a pagar pela plataforma.
+
+Os principais desafios da Beeconnect são:
+\begin{itemize}
+\item Crescer a base de lojas pagantes dentro do aplicativo.
+\item Crescer a base de usuários de forma barata.
+\end{itemize}
+
+Como mencionado previamente tais desafios eram realmente difíceis porque muitos usuários só baixariam o aplicativo se ele possuísse mais lojas participantes, assim como muitas lojas só se interessavam pela base de usuários e só entrariam no aplicativo caso a base fosse grande, com mais de cem mil usuários.
+
 Baseando-se na metodologia apresentada no capítulo anterior o autor então começou a desenvolver os testes e resultados que serão apresentados nesse capítulo.
 
 \section{Mapear estado atual da startup}
@@ -46,7 +65,7 @@ Os principais canais são:
 \item Facebook: a página do aplicativo no Facebook, https://www.facebook.com/beeconnectbr/, foi feita com o intuito de conseguir fazer campanhas para conseguir mais usuários para o aplicativo, mas também é um canal de interação com as Lojas dado que é possível, por exemplo, mencionar a loja em um publicação da página da Beeconnect.
 \item Relações Públicas: dado que a BC faz parte do grupo TM que possui uma assessoria de relações públicas há chances da BC aparecer em reportagens.
 \item Lojas de Aplicativos: as lojas de aplicativos \textit{App Store} do sistema operacional iOS e \textit{Play Store} do sistema operacional Android são de extrema importância pois são nelas que o usuário consegue baixar o aplicativo para o celular. 
-\item Email: Através do email marketing é possível se relacionar com os ususários já existentes para informá-los sobre novas lojas parceiras ou sobre descontos super especiais.
+\item Email: Através do email marketing é possível se relacionar com os usuários já existentes para informá-los sobre novas lojas parceiras ou sobre descontos super especiais.
 \end{itemize}
 
 \subsection{Fluxos de Receita}
@@ -63,7 +82,7 @@ As parcerias-chave da Beeconnect são:
 \begin{itemize}
 \item Amazon Web Services: A Amazon Web Services, popularmente conhecida como AWS é o serviço de computação em nuvem da Amazon, maior site de compras \textit{online} dos Estados Unidos. A AWS é de fundamental importância para um negócio que envolve servidores, gracas a ela muitos negócios se tornam viáveis por é possível testar hipóteses sem gastar muito dinheiro para construir toda uma infraestrutura de servidores por trás. Com a AWS o empreendedor só paga por hora de máquina utilizada e dá para facilmente colocar uma máquina melhor caso a infraestrutura necessite para suportar um tráfego maior.
 \item Apple e Google: Um desenvolvedor de aplicativos pode se manter fora das lojas de aplicativos da Apple e do Google, entretanto se ele quiser ser levado a sério ele tem que passar por todo o trâmite de aprovação de seu aplicativo para poder disponibilizá-lo nas lojas oficiais. 
-\item Vendedor terceirizado: Um vendedor entrou em contato com a equipe pois ele acabou sabendo do produto e achou interessante. Ele acabou propondo vender o produto mediante a uma comissão de 20\% por venda. Dado que o time da BC é bem enxuto a equipe achou interessante a proposta dado que só haveria um custo variável por venda realizada.
+\item Vendedor terceirizado: Um vendedor entrou em contato com a equipe pois ele acabou sabendo do produto e achou interessante. Ele acabou propondo vender o produto mediante a uma comissão de 20\% por venda. Dado que o time de vendas da BC é bem enxuto a equipe achou interessante a proposta dado que só haveria um custo variável por venda realizada.
 \item Techmob: Poucas empresas tem a chance de serem criadas dentro de um grupo que já possui startups lucrativas. A Techmob forneceu uma estrutura muito boa para o desenvolvimento da Beeconnect.
 \end{itemize}
 
@@ -103,10 +122,40 @@ A Estrutura de Custo da Beeconnect é descrita abaixo:
 \section{Gerar hipóteses sobre a proposta de valor da empresa}
 \label{cha:gerar_hipoteses}
 Dada a situação inicial da empresa modelada no Canvas de Modelo de Negócio e o objetivo do trabalho de formatura de provar que a Beeconnect tem um modelo de negócio sustentável, o autor recorreu a literatura para buscar a melhor alternativa de solução para o problema. 
-Segudo a literatura o principal problema de uma startup é construir um produto que ninguém quer. Em outras palavras, o maior problema é o produto construído ou serviço prestado não gerar valor para seu cliente.
-Ficou evidente que era urgente verificar se o aplicativo gerava valor para seus usuários. Baseando-se no Canvas de Modelo de Negócio, nos itens Segmentos de Clientes e Proposição da Valor, foram elaboradas as seguintes hipóteses:
+Segundo a literatura o principal problema de uma startup é construir um produto que ninguém quer. Em outras palavras, o maior problema é o produto construído ou serviço prestado não gerar valor para seu cliente.
+Ficou evidente que era urgente verificar se o aplicativo gerava valor para seus usuários. Baseando-se nas métricas pirata de \citeonline{mcclure2007startup}, na análise de coorte de \citeonline{leanstartup} e no Canvas de Modelo de Negócio, nos itens Segmentos de Clientes e Proposição da Valor, foram elaboradas as seguintes hipóteses:
 \begin{itemize}
 \item Varejistas de lojas físicas tem interesse num novo canal de relacionamento com os clientes.
 \item Varejistas de lojas físicas tem interesse em fidelizar o cliente.
 \item Clientes que gostam de desconto tem interesse em fácil acesso às informações das lojas físicas.
+\item Post no Facebook para simpatizantes da marca é um meio barato e efetivo de adquirir clientes.
+\item É fácil de gerar cupons na primeira semana de uso do aplicativo.
+\item Os usuários que geraram cupom utilizam o aplicativo na segunda semana.
 \end{itemize}
+
+\section{Desenhar Testes de Hipóteses}
+\label{cha:desenhar_hipoteses}
+Uma vez que as hipóteses foram elaboradas foi necessário estruturar a maneira como tais hipóteses seriam testadas. 
+
+Para a hipótese "Varejistas de lojas físicas tem interesse num novo canal de relacionamento com os clientes" o teste proposto foi organizar um mutirão de vendas e sair para a rua, na região dos Jardins devido a proximidade com o escritório da Beeconnect e tentar vender o serviço. A métrica de sucesso definida foi:
+$Contratações/Lojas Visitadas > 10\%$. A equipe estava decidida a conseguir mais parceiros para dentro do aplicativo.
+
+Para a hipótese "Varejistas de lojas físicas tem interesse em fidelizar o cliente" os vendedores da Beeconnect deveriam ligar para os varejistas que já estavam dentro do aplicativo e propor que eles oferecessem pelo um produto com desconto exclusivo para o aplicativo de formar a fidelizar os clientes. Nesse caso a métrica de sucesso definida foi: $LojasComDescontoExclusivo/Lojas Parceiras > 40\%$.
+
+Para as demais hipóteses o teste proposto foi analisar um certo grupo de usuários e verificar como eles se comportariam com o passar do tempo. 
+
+O primeiro passo consistiria na criação de um anúncio pago no Facebook colocando como alvo as pessoas que deram "curtir" na "Sonheria Dulca" um dos parceiros do aplicativo na época. A métrica utilizada para testar a hipótese "Post no Facebook para simpatizantes da marca é um meio barato e efetivo de adquirir clientes" foi: $CustoDeAquisiçãoDoCliente < R\$1,00$ e $Downloads/Alcance Do Post > 1\%$.
+
+O segundo passo seria analisar como cada uma dessas pessoas que baixaram o aplicativo através desse post iriam se comportar dentro do aplicativo. A métrica $UsuariosQueGeraramCupom/Downloads > 10\%$ durante a primeira semana de uso, indicaria o sucesso da hipótese "É fácil de gerar cupons na primeira semana de uso do aplicativo". Para a hipótese "Os usuários que geraram cupom utilizam o aplicativo na segunda semana" a métrica utilizada foi:
+\begin{equation}
+UsuariosComCupomSegundaSemana/UsuariosComCupomPrimeiraSemana > 25\%
+\end{equation}
+
+E para testar a hipótese "Clientes que gostam de desconto tem interesse em fácil acesso às informações das lojas físicas" seria necessário utilizar a ferramenta \textit{Google Analytics} para checar quantas pessoas dentro desse grupo de usuários consultaram a página de informação da loja física dentro do aplicativo, ilustrada na \autoref{fig:info_parceiros}. Para a hipótese ser considerada verídica tal proporção deveria ser maior que 30\%.
+
+\begin{figure}[H]
+\caption{Tela de Informações do Parceiro}
+\centerline{\includegraphics[scale=0.1]{img/info_parceiros}}
+\label{fig:info_parceiros}
+\caption* {Fonte: Aplicativo Beeconnect}
+\end{figure}
