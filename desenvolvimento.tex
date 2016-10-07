@@ -5,7 +5,7 @@ Conforme introduzido anteriormente o produto da empresa Beeconnect é o aplicati
 
 \begin{figure}[H]
 \caption{Exemplo de notificação do aplicativo Beeconnect}
-\centerline{\includegraphics[scale=0.25]{img/bemvindo_beeconnect}}
+\centerline{\includegraphics[scale=0.35]{img/bemvindo_beeconnect}}
 \label{fig:bemvindo_beeconnect}
 \caption* {Fonte: https://app.beeconnect.com.br/}
 \end{figure}
@@ -125,46 +125,123 @@ Dada a situação inicial da empresa modelada no Canvas de Modelo de Negócio e 
 Segundo a literatura o principal problema de uma startup é construir um produto que ninguém quer. Em outras palavras, o maior problema é o produto construído ou serviço prestado não gerar valor para seu cliente.
 Ficou evidente que era urgente verificar se o aplicativo gerava valor para seus usuários. Baseando-se nas métricas pirata de \citeonline{mcclure2007startup}, na análise de coorte de \citeonline{leanstartup} e no Canvas de Modelo de Negócio, nos itens Segmentos de Clientes e Proposição da Valor, foram elaboradas as seguintes hipóteses:
 \begin{itemize}
-\item Varejistas de lojas físicas tem interesse num novo canal de relacionamento com os clientes.
-\item Varejistas de lojas físicas tem interesse em fidelizar o cliente.
-\item Clientes que gostam de desconto tem interesse em fácil acesso às informações das lojas físicas.
-\item Post no Facebook para simpatizantes da marca é um meio barato e efetivo de adquirir clientes.
-\item É fácil de gerar cupons na primeira semana de uso do aplicativo.
-\item Os usuários que geraram cupom utilizam o aplicativo na segunda semana.
+\item Hipótese 1: Varejistas de lojas físicas tem interesse num novo canal de relacionamento com os clientes.
+\item Hipótese 2: Varejistas de lojas físicas tem interesse em fidelizar o cliente.
+\item Hipótese 3: Post no \textit{Facebook} para simpatizantes da marca é um meio barato e efetivo de adquirir clientes.
+\item Hipótese 4: É fácil de gerar cupons na primeira semana de uso do aplicativo.
+\item Hipótese 5: Os usuários que geraram cupom utilizam o aplicativo na segunda semana.
+\item Hipótese 6: Clientes que gostam de desconto tem interesse em fácil acesso às informações das lojas físicas.
 \end{itemize}
 
 \section{Desenhar Testes de Hipóteses}
 \label{cha:desenhar_hipoteses}
 Uma vez que as hipóteses foram elaboradas foi necessário estruturar a maneira como tais hipóteses seriam testadas. 
 
+\subsection{Hipótese 1}
+\label{cha:hip_1}
 Para a hipótese "Varejistas de lojas físicas tem interesse num novo canal de relacionamento com os clientes" o teste proposto foi organizar um mutirão de vendas e sair para a rua, na região dos Jardins devido a proximidade com o escritório da Beeconnect e tentar vender o serviço. A métrica de sucesso definida foi:
 $Contratações/Lojas Visitadas > 10\%$. A equipe estava decidida a conseguir mais parceiros para dentro do aplicativo.
 
+\subsection{Hipótese 2}
+\label{cha:hip_2}
 Para a hipótese "Varejistas de lojas físicas tem interesse em fidelizar o cliente" os vendedores da Beeconnect deveriam ligar para os varejistas que já estavam dentro do aplicativo e propor que eles oferecessem pelo um produto com desconto exclusivo para o aplicativo de formar a fidelizar os clientes. Nesse caso a métrica de sucesso definida foi: $LojasComDescontoExclusivo/Lojas Parceiras > 40\%$.
 
 Para as demais hipóteses o teste proposto foi analisar um certo grupo de usuários e verificar como eles se comportariam com o passar do tempo. 
 
-O primeiro passo consistiria na criação de um anúncio pago no Facebook colocando como alvo as pessoas que deram "curtir" na "Sonheria Dulca" um dos parceiros do aplicativo na época. A métrica utilizada para testar a hipótese "Post no Facebook para simpatizantes da marca é um meio barato e efetivo de adquirir clientes" foi: $CustoDeAquisiçãoDoCliente < R\$1,00$ e $Downloads/Alcance Do Post > 1\%$.
+\subsection{Hipótese 3}
+\label{cha:hip_3}
+O primeiro passo consistiria na criação de um anúncio pago no Facebook colocando como alvo as pessoas que deram "curtir" na página em um dos parceiros do aplicativo na época. A métrica utilizada para testar a hipótese "Post no Facebook para simpatizantes da marca é um meio barato e efetivo de adquirir clientes" foi: $CustoDeAquisiçãoDoCliente < R\$1,00$ e $Downloads/Alcance Do Post > 1\%$.
 
-O segundo passo seria analisar como cada uma dessas pessoas que baixaram o aplicativo através desse post iriam se comportar dentro do aplicativo. A métrica $UsuariosQueGeraramCupom/Downloads > 10\%$ durante a primeira semana de uso, indicaria o sucesso da hipótese "É fácil de gerar cupons na primeira semana de uso do aplicativo". Para a hipótese "Os usuários que geraram cupom utilizam o aplicativo na segunda semana" a métrica utilizada foi:
+\subsection{Hipótese 4}
+\label{cha:hip_4}
+O segundo passo seria analisar como cada uma dessas pessoas que baixaram o aplicativo através desse post iriam se comportar dentro do aplicativo. A métrica $UsuariosQueGeraramCupom/Downloads > 10\%$ durante a primeira semana de uso, indicaria o sucesso da hipótese "É fácil de gerar cupons na primeira semana de uso do aplicativo". 
+
+\subsection{Hipótese 5}
+\label{cha:hip_5}
+Para a hipótese "Os usuários que geraram cupom utilizam o aplicativo na segunda semana" a métrica utilizada foi:
 \begin{equation}
 UsuariosComCupomSegundaSemana/UsuariosComCupomPrimeiraSemana > 25\%
 \end{equation}
 
+\subsection{Hipótese 6}
+\label{cha:hip_6}
 E para testar a hipótese "Clientes que gostam de desconto tem interesse em fácil acesso às informações das lojas físicas" seria necessário utilizar a ferramenta \textit{Google Analytics} para checar quantas pessoas dentro desse grupo de usuários consultaram a página de informação da loja física dentro do aplicativo, ilustrada na \autoref{fig:info_parceiros}. Para a hipótese ser considerada verídica tal proporção deveria ser maior que 30\%.
 
 \begin{figure}[H]
 \caption{Tela de Informações do Parceiro}
-\centerline{\includegraphics[scale=0.1]{img/info_parceiros}}
+\centerline{\includegraphics[scale=0.13]{img/info_parceiros}}
 \label{fig:info_parceiros}
 \caption* {Fonte: Aplicativo Beeconnect}
 \end{figure}
 
 \section{Testar Hipóteses}
 \label{cha:testar_hipoteses}
+Durante o mês de março a equipe focou em realizar os testes o mais rápido possível. 
+
+\subsection{Teste da hipótese 1}
+\label{cha:teste_1}
+Para testar a hipótese 1 foi organizado um mutirão de vendas durante uma segunda-feira que focou na região da Paulista entre os metrôs Trianon-Masp e Consolação devido a proximidade com o escritório. Onze membros da Beeconnect participaram do mutirão organizados em cinco grupos, quatro duplas e um trio, cada grupo deveria percorrer uma das áreas, ilustradas na \autoref{fig:area_mutirao}.
+
+\begin{figure}[H]
+\caption{Área coberta pelo mutirão de vendas}
+\centerline{\includegraphics[scale=0.25]{img/area_mutirao}}
+\label{fig:area_mutirao}
+\caption* {Fonte: Elaborado pelo autor através da ferramenta do Google Maps}
+\end{figure}
+
+Durante o mutirão de vendas os membros da equipe tentaram vender primeiro o plano mensal com beacons que custava R\$99 por mês por beacon por loja, caso não houvesse interesse o membro oferecia o plano sem beacon que custava R\$49 por mês por loja. A equipe também carregava uma apresentação impressa, exemplo de slide na \autoref{fig:apresentacao_vendas_bc}, da Beeconnect para deixar com os funcionários da loja caso o dono não estivesse presente.
+
+\begin{figure}[H]
+\caption{Exemplo de slide da Apresentação de Vendas}
+\centerline{\includegraphics[width=0.8\textwidth]{img/apresentacao_vendas_bc}}
+\label{fig:apresentacao_vendas_bc}
+\caption* {Fonte: Material de vendas da Beeconnect}
+\end{figure}
+
+\subsection{Teste da hipótese 2}
+\label{cha:teste_2}
+Para o teste da hipótese 2, que foi realizado dois dias após o mutirão de vendas, o time comercial da startup ligou para todos os varejistas que estavam dentro do aplicativo para perguntar se eles estavam dispostos a dar pelo menos um desconto exclusivo no aplicativo.
+
+\subsection{Teste da hipótese 3}
+\label{cha:teste_3}
+O teste da hipótese 3 foi realizado dois dias após a realização do teste 2, ou seja, em uma sexta-feira. A equipe da Beeconnect criou um post pago no Facebook, conforme mostra a \autoref{fig:post_sonheria}, com a melhor oferta disponível no aplicativo na época, "50\% de desconto na compra do segundo sonho" na Sonheria Dulca. Na campanha de marketing a equipe mirou no público que havia dado curtir na página do Facebook da Sonheria. A campanha rodou por 1 dia por motivos de orçamento.
+
+\begin{figure}[H]
+\caption{Post Facebook Sonheria Dulca}
+\centerline{\includegraphics[width=0.8\textwidth]{img/post_sonheria}}
+\label{fig:post_sonheria}
+\caption* {Fonte: Material de marketing da Beeconnect}
+\end{figure}
+
+\subsection{Teste da hipótese 4}
+\label{cha:teste_4}
+Para o teste da hipótese 4, que começou um dia após a realização do teste 3, utilizou-se do monitoramento desenvolvido dentro do aplicativo para analisar o comportamento dos usuários que baixaram o app através do post feito no Facebook. O objetivo era ver quantos usuários únicos iriam gerar cupom durante a primeira semana de experiência do aplicativo.
+
+\subsection{Teste da hipótese 5}
+\label{cha:teste_5}
+Para testar a hipótese 5 foi realizado após uma semana em relação ao teste 4 com intuito de fazer uma análise de coorte do grupo de usuários que foi impactado pelo post feito no Facebook. Analisou-se quantos usuários que geraram cupom na semana anterior também geraram cupom naquela semana.
+
+\subsection{Teste da hipótese 6}
+\label{cha:teste_6}
+O teste da hipótese 6 foi realizado em paralelo com os teste 4 e 5. Através do monitoramento feito no aplicativo foi possível analisar quantos usuários únicos acessaram a tela de informações da Sonheria Dulca, ilustrada na \autoref{fig:info_parceiros}.
 
 \section{Analisar Resultados e Repetir Ciclo}
 \label{cha:analisar_resultados}
+Essa seção apresenta quais foram os resultados obtidos durante a fase de testes assim como faz uma análise desses resultados.
+
+\subsection{Resultado do Teste da hipótese 1}
+\label{cha:resultado_1}
+Durante esse teste foram visitadas 70 lojas, sendo que 10 decidiram fazer parte do aplicativo, ou seja, pouco mais que 14\% das lojas foram convertidas, como mostra a \autoref{tab:resultado_1}.
+\begin{table}[H]
+\centering
+\caption{Resultado do teste da hipótese 1}
+\label{tab:resultado_1}
+\begin{tabular}{ccc}
+Número de Lojas Visitadas & Número de Lojas Convertidas & Resultado \\
+70                        & 10                          & 14.2\% 
+\end{tabular}
+\caption* {Fonte: Elaborado pelo autor}    
+\end{table}
 
 \section{Listar Lições Aprendidas}
 \label{cha:listar_licoes_aprendidas}

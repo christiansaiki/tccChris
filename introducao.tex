@@ -62,7 +62,7 @@ Até que um dos membros da equipe utilizou um contato que trabalhava em um grand
 \item Um servidor que fazia a comunicação com o aplicativo e gravava todas as informações de distância do celular em relação ao beacon e enviava uma propaganda para o aplicativo.
 \end{itemize}
 
-Porém na apresentação para o Shopping a equipe sequer apresentou o produto desenvolvido dado o desenrolar dado que o cliente claramente não parecia interessado com a ideia de publicidade móvel feita de dessa maneira.
+Porém na apresentação para o Shopping a equipe sequer apresentou o produto desenvolvido dado que o cliente claramente não parecia estar interessado com a ideia de publicidade móvel feita de dessa maneira.
 
 Todos ficaram muito frustrados com o tempo perdido e a sensação de que haveria um jeito melhor de ter desenvolvido o projeto sem ter gasto esforços com tarefas desnecessárias ou que não tinham um valor claro a ser gerado.
 
@@ -71,12 +71,6 @@ A equipe então começou a vender a ideia do que a Beeconnect poderia fazer e cr
 Após acumular alguns varejistas interessados ficou evidente a necessidade da criação de um produto para ser testado. A pressão por resultados fez até o autor abrir mão da graduação na Escola Politécnica para trabalhar cerca de 14 horas por dia para liderar o desenvolvimento tanto de um servidor quanto de um aplicativo para smartphones \textit{Android}. Dado o aparente interesse dos varejistas por essa tecnologia a Beeconnect realizou mais contratações para auxiliar tanto em vendas quanto no desenvolvimento de software.
 
 O produto criado foi um aplicativo de descontos chamado iShop, que utilizava a tecnologia de beacons para gerar um cupom de desconto somente na loja física cadastrada. O funcionamento do aplicativo basicamente consistia em quatro etapas conforme mostrado na \autoref{fig:explicacaoBeeconnect}:
-\begin{itemize}
-\item Comunicação do celular com o beacon: O beacon é um aparelho passivo, ou seja, ele só emite um sinal mandando três informações: \textit{UUID}, \textit{Major} e \textit{Minor}. O \textit{UUID} é o identificador único universal, trata-se de um número hexadecimal de trinta e dois dígitos que para o caso dos beacons tem como propósito identificar uma rede de beacons. Já o \textit{Major} e \textit{Minor} são números inteiros que variam de 0 a 65535 que têm como objetivo identificar um beacon dentro da rede dele.
-\item Interação do usuário com o aplicativo: com o aplicativo o usuário consegue ver as ofertas mais relevantes para ele, consultar as lojas mais próximas a ele e gerar cupons de desconto.
-\item Comunicação do celular com o servidor: O aplicativo só funciona se o usuário estiver conectado a internet, seja por meio do 3G/4G ou via \textit{WiFi}. O servidor então manda para o celular as ofertas mais relevantes baseadas na localização do usuário enviada pelo celular. Além disso, o celular envia para o servidor qual beacon que ele está detectando para que o servidor decida ou não enviar uma notificação para o usuário.
-\item Interação do varejista com a plataforma: Para o varejista foi criada uma plataforma, um site, ilustrado na \autoref{fig:plataforma_varejistas}, onde ele consegue gerenciar as informações e as promoções de cada loja. Tais dados são então salvos na base de dados e então disponibilizados para o aplicativo.
-\end{itemize}
 
 \begin{figure}[H]
 \caption{Funcionamento app Beeconnect}
@@ -85,9 +79,16 @@ O produto criado foi um aplicativo de descontos chamado iShop, que utilizava a t
 \caption* {Fonte: Material de marketing da Beeconnect}
 \end{figure}
 
+\begin{itemize}
+\item Comunicação do celular com o beacon: O beacon é um aparelho passivo, ou seja, ele só emite um sinal mandando três informações: \textit{UUID}, \textit{Major} e \textit{Minor}. O \textit{UUID} é o identificador único universal, trata-se de um número hexadecimal de trinta e dois dígitos que para o caso dos beacons tem como propósito identificar uma rede de beacons. Já o \textit{Major} e \textit{Minor} são números inteiros que variam de 0 a 65535 que têm como objetivo identificar um beacon dentro da rede dele.
+\item Interação do usuário com o aplicativo: com o aplicativo o usuário consegue ver as ofertas mais relevantes para ele, consultar as lojas mais próximas a ele e gerar cupons de desconto.
+\item Comunicação do celular com o servidor: O aplicativo só funciona se o usuário estiver conectado a internet, seja por meio do 3G/4G ou via \textit{WiFi}. O servidor então manda para o celular as ofertas mais relevantes baseadas na localização do usuário enviada pelo celular. Além disso, o celular envia para o servidor qual beacon que ele está detectando para que o servidor decida ou não enviar uma notificação para o usuário.
+\item Interação do varejista com a plataforma: Para o varejista foi criada uma plataforma, um site, ilustrado na \autoref{fig:plataforma_varejistas}, onde ele consegue gerenciar as informações e as promoções de cada loja. Tais dados são então salvos na base de dados e então disponibilizados para o aplicativo.
+\end{itemize}
+
 \begin{figure}[H]
 \caption{Plataforma para Varejistas}
-\centerline{\includegraphics[scale=0.25]{img/plataforma_varejistas}}
+\centerline{\includegraphics[scale=0.3]{img/plataforma_varejistas}}
 \label{fig:plataforma_varejistas}
 \caption* {Fonte: https://app.beeconnect.com.br/}
 \end{figure}
@@ -125,4 +126,18 @@ Para a Techmob verifica-se a relevância de utilizar os métodos propostos pela 
 
 Dado que o espírito empreendedor está cada vez mais forte dentro da Escola Politécnica da Universidade de São Paulo. O trabalho aqui apresentado mostra a relevância do ensino de tais métodos de empreendedorismo, para que as futuras startups criadas por politécnicos não tenham um início tão turbulento quanto a empresa analisada neste trabalho. E caso a startup também saia mal estruturada assim como a Beeconnect que esse trabalho de conclusão de curso seja um material de referência para auxiliar empresas que estão passando por um processo de reestruturação.
 
-Para a sociedade a importância é mostrar que no empreendedorismo não basta ter uma boa ideia, parece que todo mundo quer fazer um aplicativo. É necessário que essa ideia seja bem estruturada e o mais importante, que ela seja validada o mais rápido possível. É importante apresentar que o mundo empreendedor não é glamuroso como se mostram nos filmes e nas revistas, que não é nada fácil construir o próximo \textit{Facebook} ou \textit{Google}. É preciso demonstrar que a escolha de empreender tem que vir com a vontade de passar por dificuldades, por momentos de estresse. O empreendedor tem que ser resiliente. 
+Para a sociedade a importância é mostrar que no empreendedorismo não basta ter uma boa ideia, parece que todo mundo quer fazer um aplicativo. É necessário que essa ideia seja bem estruturada e o mais importante, que ela seja validada o mais rápido possível. É importante apresentar que o mundo empreendedor não é glamouroso como se mostram nos filmes e nas revistas, que não é nada fácil construir o próximo \textit{Facebook} ou \textit{Google}. É preciso demonstrar que a escolha de empreender tem que vir com a vontade de passar por dificuldades, por momentos de estresse. O empreendedor tem que ser resiliente. 
+
+\section{Estrutura do Trabalho}
+\label{cha:estrutura_do_trabalho}
+O trabalho de formatura foi estruturado conforme apresentado abaixo:
+
+No Capítulo 1 o autor introduz a origem da Beeconnect, insere o leitor no contexto da empresa, apresenta a definição do problema que startup encontrava, propõe os objetivos do trabalho de conclusão de curso, assim como menciona a justificativa do trabalho demonstrando-se sua relevância.
+
+O Capítulo 2 apresenta a bibliografia utilizada pelo autor para que o trabalho pudesse ser desenvolvido. Foram apresentados os conceitos da Startup Enxuta, Desenvolvimento de Clientes, Métricas Pirata, Canvas de Modelo de Negócio e Canvas de Proposição de Valor.
+
+No Capítulo 3 o autor insere a metodologia utilizada durante o desenvolvimento do trabalho do projeto de modo a atingir os objetivos estabelecidos previamente.
+
+O Capítulo 4 apresenta os testes realizados pelo autor bem como seus resultados e análise dos mesmos.
+
+O Capítulo 5 finaliza o trabalho com uma discussão sobre toda jornada realizada bem como uma reflexão sobre as lições aprendidas no decorrer de todo o processo.
