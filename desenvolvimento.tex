@@ -314,6 +314,7 @@ Usuários com cupom semana 1 & Usuários com cupom semana 2 & Resultado & Espera
 \subsection{Resultado do Teste da hipótese 6}
 \label{cha:resultado_6}
 Quanto ao teste de consultas à tela de informações do parceiro, dos 90 usuários que baixaram o aplicativo, 15 consultaram ao menos uma vez essa tela durante as duas semanas de monitoramento, cujo resultado dá aproximadamente 17\%, muito aquém dos 30\% esperados, como mostra a \autoref{tab:resultado_6}.
+
 \begin{table}[H]
 \centering
 \caption{Resultado do teste da hipótese 6}
@@ -391,7 +392,109 @@ A gelateria disponibilizou a oferta de \textit{"Gelato médio de R\$15 por R\$11
 
 \section{Analisar Resultados e Repetir Ciclo 2}
 \label{cha:analisar_resultados_2}
+Os resultados foram medidos ao longo de uma semana após a realização do mutirão de marketing.
 
+\subsection{Resultado do Teste da hipótese 7}
+\label{cha:resultado_7}
+Após a realização dos testes para confirmar se os varejistas estavam dispostas a pagar pelo serviço, o autor então analisou o resultado de cada uma das lojas.
+
+\subsubsection{Gelateria Casa Elli}
+\label{cha:resultado_casa_elli}
+O resultado na gelateria Casa Elli foi bastante satisfatório, foram gerados 30 cupons sendo utilizados 26, onde 24 novos clientes que acabaram comprando o gelato médio cujo preço era de R\$15, como mencionado na \autoref{cha:teste_hipotese_7}, mas graças ao desconto pelo aplicativo Beeconnect saiu por R\$11. Os outros dois cupons foram utilizados por usuários antigos do aplicativo, ou seja, se encaixaram nas vendas recursivas como mostra a \autoref{tab:resultado_7_casa_elli_a}.
+
+\begin{table}[H]
+\centering
+\caption{Resultado do teste 7 na Gelateria Casa Elli}
+\label{tab:resultado_7_casa_elli_a}
+\begin{tabular}{cccc}
+Novos Clientes & Preço Cheio & Desconto & Vendas Recursivas \\
+24             & 15          & 4        & 2   
+\end{tabular}
+\caption* {Fonte: Elaborado pelo autor}    
+\end{table}
+
+Aplicando os números acima na fórmula mencionada na \autoref{cha:hipotese_7}, surge o resultado abaixo:
+\[[(24 * (15 - 4)) + (2 * (15 - 4))] = 286\]
+
+Como a gelateria estava usufruindo da tecnologia de beacons, sua mensalidade custaria R\$99/mês que, quando comparada com resultado de R\$286 advindo do aplicativo Beeconnect em apenas uma semana, pode-se analisar que seria um bom investimento, como mostra a \autoref{tab:resultado_7_casa_elli_b}. 
+
+\begin{table}[H]
+\centering
+\caption{Análise do teste 7 na Gelateria Casa Elli}
+\label{tab:resultado_7_casa_elli_b}
+\begin{tabular}{ccc}
+Resultado & Mensalidade & Retorno do Investimento \\
+286             & 99          &   2.88
+\end{tabular}
+\caption* {Fonte: Elaborado pelo autor}    
+\end{table}
+
+Apesar do resultado positivo, a dona da loja ainda não estava disposta a pagar pelo serviço, ela gostaria de mais tempo para decidir se estava disposta a pagar a quantia. Entretanto, ela disse que utilizaria a plataforma para subir mais campanhas e que daria mais feedbacks para que a equipe conseguisse melhorar ainda mais o produto.
+
+\subsubsection{Sonheria Dulca}
+\label{cha:resultado_sonheria_dulca}
+O resultado na Sonheria Dulca também foi bem positivo, foram gerados 21 cupons sendo 19 deles utilizados, onde 18 foram utilizados por novos clientes e 1 utilizado por um cliente antigo. Como mencionado anteriormente, a oferta disponiblizada foi de "Compre 2 sonhos pague 1", na época cada sonho custava R\$10, ou seja, o preço cheio seria de R\$20 e o desconto seria de R\$10, como mostra a \autoref{tab:resultado_7_sonheria_dulca_a}
+
+\begin{table}[H]
+\centering
+\caption{Resultado do teste 7 na Sonheria Dulca}
+\label{tab:resultado_7_sonheria_dulca_a}
+\begin{tabular}{cccc}
+Novos Clientes & Preço Cheio & Desconto & Vendas Recursivas \\
+18             & 20          & 10        & 1   
+\end{tabular}
+\caption* {Fonte: Elaborado pelo autor}    
+\end{table}
+
+Aplicando os números acima na fórmula mencionada na \autoref{cha:hipotese_7}, surge o resultado abaixo:
+\[[(18 * (20 - 10)) + (1 * (20 - 10))] = 190\]
+
+Assim como a Gelateria, a Sonheria também utilizava a tecnologia de beacons, portanto a mensalidade seria de R\$99/mês. O resultado de R\$190 sem contar com as vendas casadas de água e café foi bem positivo para a loja, como apresenta a \autoref{tab:resultado_7_sonheria_dulca_b}.
+
+\begin{table}[H]
+\centering
+\caption{Análise do teste 7 na Sonheria Dulca}
+\label{tab:resultado_7_sonheria_dulca_b}
+\begin{tabular}{ccc}
+Resultado & Mensalidade & Retorno do Investimento \\
+190             & 99          &   1.91
+\end{tabular}
+\caption* {Fonte: Elaborado pelo autor}    
+\end{table}
+
+Os donos da loja também não se mostraram interessados em pagar pela utilização do serviço e também disseram que não estavam dispostos a utilizar a plataforma por conta própria pois não possuíam uma pessoa disponível para criar as campanhas e administrá-las.
+
+\subsubsection{Tisu Store}
+\label{cha:resultado_tisu_store}
+No caso da Tisu Store, a oferta do sapatênis com desconto de R\$100 teve 3 cupons gerados, entretanto, não houve utilização desses cupons. Portanto, o resultado foi bem insatisfatório, como mostram a \autoref{tab:resultado_7_tisu_store_a} e a \autoref{tab:resultado_7_tisu_store_b}.
+
+
+\begin{table}[H]
+\centering
+\caption{Resultado do teste 7 na Tisu Store}
+\label{tab:resultado_7_tisu_store_a}
+\begin{tabular}{cccc}
+Novos Clientes & Preço Cheio & Desconto & Vendas Recursivas \\
+0             & 299          & 100        & 0   
+\end{tabular}
+\caption* {Fonte: Elaborado pelo autor}    
+\end{table}
+
+Aplicando os números acima na fórmula mencionada na \autoref{cha:hipotese_7}, surge o resultado abaixo:
+\[[(0 * (299 - 100)) + (0 * (299 - 100))] = 0\]
+
+\begin{table}[H]
+\centering
+\caption{Análise do teste 7 na Tisu Store}
+\label{tab:resultado_7_tisu_store_b}
+\begin{tabular}{ccc}
+Resultado & Mensalidade & Retorno do Investimento \\
+0             & 99          &   0
+\end{tabular}
+\caption* {Fonte: Elaborado pelo autor}    
+\end{table}
+
+Como era de se esperar com esse resultado tão ruim o dono da loja não mostrou nenhum interesse em pagar pelo serviço e também disse que não iria utilizar a plataforma por conta própria. 
 
 \section{Listar Lições Aprendidas}
 \label{cha:listar_licoes_aprendidas}
