@@ -18,7 +18,7 @@ Os principais desafios da Beeconnect são:
 \item Crescer a base de usuários de forma barata.
 \end{itemize}
 
-Como mencionado previamente tais desafios eram realmente difíceis porque muitos usuários só baixariam o aplicativo se ele possuísse mais lojas participantes, assim como muitas lojas só se interessavam pela base de usuários e só entrariam no aplicativo caso a base fosse grande, com mais de cem mil usuários.
+Como mencionado previamente tais desafios eram realmente difíceis de serem resolvidos porque muitos usuários só baixariam o aplicativo se ele possuísse mais lojas participantes, assim como muitas lojas só se interessavam pela base de usuários e só entrariam no aplicativo caso a base fosse grande, com mais de cem mil usuários.
 
 Baseando-se na metodologia apresentada no capítulo anterior o autor então começou a desenvolver os testes e resultados que serão apresentados nesse capítulo. Foram feitas duas iterações no ciclo explicitado pela metodologia introduzida no capítulo anteriror.
 
@@ -140,32 +140,76 @@ Uma vez que as hipóteses foram elaboradas foi necessário estruturar a maneira 
 \subsection{Hipótese 1}
 \label{cha:hip_1}
 Para a hipótese "Varejistas de lojas físicas tem interesse num novo canal de relacionamento com os clientes" o teste proposto foi organizar um mutirão de vendas e sair para a rua, na região dos Jardins devido a proximidade com o escritório da Beeconnect e tentar vender o serviço. A métrica de sucesso definida foi:
-$Contratações/Lojas Visitadas > 10\%$. A equipe estava decidida a conseguir mais parceiros para dentro do aplicativo.
+\[ \dfrac{C}{LV} > 10\%\]
+
+Onde: 
+\begin{itemize}
+\item C: é o número de contratações.
+\item LV: é o número de lojas visitadas durante o mutirão de vendas.
+\end{itemize}
 
 \subsection{Hipótese 2}
 \label{cha:hip_2}
-Para a hipótese "Varejistas de lojas físicas tem interesse em fidelizar o cliente" os vendedores da Beeconnect deveriam ligar para os varejistas que já estavam dentro do aplicativo e propor que eles oferecessem pelo um produto com desconto exclusivo para o aplicativo de formar a fidelizar os clientes. Nesse caso a métrica de sucesso definida foi: $LojasComDescontoExclusivo/Lojas Parceiras > 40\%$.
+Para a hipótese "Varejistas de lojas físicas tem interesse em fidelizar o cliente" os vendedores da Beeconnect deveriam ligar para os varejistas que já estavam dentro do aplicativo e propor que eles oferecessem pelo um produto com desconto exclusivo para o aplicativo de formar a fidelizar os clientes. Nesse caso a métrica de sucesso definida foi:
+
+\[\dfrac{LCD}{LP} > 40\%\]
+
+Onde: 
+\begin{itemize}
+\item LCD: é o número de lojas que disponibilizaram pelo menos um cupom de desconto exclusivo.
+\item LP: é o número de lojas parceiras dentro do aplicativo.
+\end{itemize}
 
 Para as demais hipóteses o teste proposto foi analisar um certo grupo de usuários e verificar como eles se comportariam com o passar do tempo. 
 
 \subsection{Hipótese 3}
 \label{cha:hip_3}
-O primeiro passo consistiria na criação de um anúncio pago no Facebook colocando como alvo as pessoas que deram "curtir" na página em um dos parceiros do aplicativo na época. A métrica utilizada para testar a hipótese "Post no Facebook para simpatizantes da marca é um meio barato e efetivo de adquirir clientes" foi: $CustoDeAquisiçãoDoCliente < R\$1,00$ e $Downloads/Alcance Do Post > 1\%$.
+O primeiro passo consistiria na criação de um anúncio pago no Facebook colocando como alvo as pessoas que deram "curtir" na página em um dos parceiros do aplicativo na época. A métrica utilizada para testar a hipótese "Post no Facebook para simpatizantes da marca é um meio barato e efetivo de adquirir clientes" foi:
+\begin{align*} 
+CAC < R\$1,00 \\
+\dfrac{D}{AP} > 0.5\%
+\end{align*}
+
+Onde: 
+\begin{itemize}
+\item CAC: é o custo de aquisição de um usuário.
+\item D: é o número de downloads do aplicativo advindos do post no \textit{Facebook}.
+\item AP: é o alcance dos post, ou seja, quantas pessoas viram a publicação.
+\end{itemize}
 
 \subsection{Hipótese 4}
 \label{cha:hip_4}
-O segundo passo seria analisar como cada uma dessas pessoas que baixaram o aplicativo através desse post iriam se comportar dentro do aplicativo. A métrica $UsuariosQueGeraramCupom/Downloads > 10\%$ durante a primeira semana de uso, indicaria o sucesso da hipótese "É fácil de gerar cupons na primeira semana de uso do aplicativo". 
+O segundo passo seria analisar como cada uma dessas pessoas que baixaram o aplicativo através desse post iriam se comportar dentro do aplicativo. Durante a primeira semana de uso para mensurar o sucesso da hipótese "É fácil de gerar cupons na primeira semana de uso do aplicativo", a equipe decidiu medir a métrica:
+
+\[\dfrac{UP}{D} > 10\%\]
+
+Onde: 
+\begin{itemize}
+\item UP: é o número de usuários que geraram cupons durante a primeira semana de uso do aplicativo.
+\item D: é o número de downloads do aplicativo advindos do post no \textit{Facebook}.
+\end{itemize}
 
 \subsection{Hipótese 5}
 \label{cha:hip_5}
 Para a hipótese "Os usuários que geraram cupom utilizam o aplicativo na segunda semana" a métrica utilizada foi:
-\begin{equation}
-UsuariosComCupomSegundaSemana/UsuariosComCupomPrimeiraSemana > 25\%
-\end{equation}
+\[\dfrac{UPS}{UP} > 25\%\]
+
+Onde: 
+\begin{itemize}
+\item UPS: é o número de usuários que geraram cupons durante a primeira e a segunda semana de uso do aplicativo.
+\item UP: é o número de usuários que geraram cupons durante a primeira semana de uso do aplicativo.
+\end{itemize}
 
 \subsection{Hipótese 6}
 \label{cha:hip_6}
-E para testar a hipótese "Clientes que gostam de desconto tem interesse em fácil acesso às informações das lojas físicas" seria necessário utilizar a ferramenta \textit{Google Analytics} para checar quantas pessoas dentro desse grupo de usuários consultaram a página de informação da loja física dentro do aplicativo, ilustrada na \autoref{fig:info_parceiros}. Para a hipótese ser considerada verídica tal proporção deveria ser maior que 30\%.
+E para testar a hipótese "Clientes que gostam de desconto tem interesse em fácil acesso às informações das lojas físicas" seria necessário utilizar a ferramenta \textit{Google Analytics} para checar quantas pessoas dentro desse grupo de usuários consultaram a página de informação da loja física dentro do aplicativo, ilustrada na \autoref{fig:info_parceiros}. Portanto a métrica utilizada para checar tal hipótese foi:
+\[\dfrac{UPI}{D} > 30\%\]
+
+Onde: 
+\begin{itemize}
+\item UPI: é o número de usuários que consultaram a página de informação da Sonheria Dulca.
+\item D: é o número de downloads do aplicativo advindos do post no \textit{Facebook}.
+\end{itemize}
 
 \begin{figure}[H]
 \caption{Tela de Informações do Parceiro}
@@ -236,9 +280,10 @@ Durante esse teste foram visitadas 70 lojas, sendo que 10 decidiram fazer parte 
 \centering
 \caption{Resultado do teste da hipótese 1}
 \label{tab:resultado_1}
-\begin{tabular}{cccc}
-Lojas Visitadas & Lojas Convertidas & Resultado & Esperado          \\
-70                        & 10                          & 14.3\%      & \textgreater 10\%
+\begin{tabular}{|c|c|c|c|}
+\hline
+Número de Lojas Visitadas & Número de Lojas Convertidas & Resultado & Esperado          \\ \hline
+70                        & 10                          & 14\%      & \textgreater 10\% \\ \hline
 \end{tabular}
 \caption* {Fonte: Elaborado pelo autor}    
 \end{table}
@@ -250,9 +295,10 @@ Ao ligar para os varejistas, os vendedores da Beeconnect conseguiram que 12 das 
 \centering
 \caption{Resultado do teste da hipótese 2}
 \label{tab:resultado_2}
-\begin{tabular}{cccc}
-Lojas com Desconto Exclusivo & Lojas Parceiras & Resultado & Esperado          \\
-12                       & 28                          & 42.8\%      & \textgreater 40\%
+\begin{tabular}{|c|c|c|c|}
+\hline
+Lojas com Desconto Exclusivo & Lojas Parceiras & Resultado   & Esperado          \\ \hline
+12                       	  & 28              & 42.8\%      & \textgreater 40\% \\ \hline
 \end{tabular}
 \caption* {Fonte: Elaborado pelo autor}    
 \end{table}
@@ -264,9 +310,10 @@ O post no Facebook feito para a campanha da Sonheria rendeu 90 downloads do apli
 \centering
 \caption{Resultado 1 do teste da hipótese 3}
 \label{tab:resultado_3_1}
-\begin{tabular}{cccc}
-Downloads & Alcance & Conversão & Conversão Esperada \\
-90                       & 55440 &  0.23\%     & \textgreater 1\%
+\begin{tabular}{|c|c|c|c|}
+\hline
+Downloads & Alcance & Conversão & Conversão Esperada \\ \hline
+90                       & 55440 &  0.23\%     & \textgreater 0.5\% \\ \hline
 \end{tabular}
 \caption* {Fonte: Elaborado pelo autor}    
 \end{table}
@@ -275,9 +322,10 @@ Downloads & Alcance & Conversão & Conversão Esperada \\
 \centering
 \caption{Resultado 2 do teste da hipótese 3}
 \label{tab:resultado_3_2}
-\begin{tabular}{ccc}
-Custo por Download & Custo por Download Esperado \\
-R\$4,43          & \textless R\$1,00
+\begin{tabular}{|c|c|c|}
+\hline
+Custo por Download & Custo por Download Esperado \\ \hline
+R\$4,43          & \textless R\$1,00 \\ \hline
 \end{tabular}
 \caption* {Fonte: Elaborado pelo autor}    
 \end{table}
@@ -290,9 +338,10 @@ Dos 90 usuários que baixaram o aplicativo através do Post do Facebook criado p
 \centering
 \caption{Resultado do teste da hipótese 4}
 \label{tab:resultado_4}
-\begin{tabular}{cccc}
-Usuários & Usuários Únicos com Cupom & Conversão & Conversão Esperada \\
-90       & 11  & 12.2\%   & \textgreater 10\%
+\begin{tabular}{|c|c|c|c|}
+\hline
+Usuários & Usuários Únicos com Cupom & Conversão & Conversão Esperada \\ \hline
+90       & 11  & 12.2\%   & \textgreater 10\% \\ \hline
 \end{tabular}
 \caption* {Fonte: Elaborado pelo autor}    
 \end{table}
@@ -304,9 +353,10 @@ Dos 11 usuários que geraram pelo menos um cupom na primeira semana de uso do ap
 \centering
 \caption{Resultado do teste da hipótese 5}
 \label{tab:resultado_5}
-\begin{tabular}{cccc}
-Usuários com cupom semana 1 & Usuários com cupom semana 2 & Resultado & Esperado \\
-11       & 3  & 27.2\%   & \textgreater 25\%
+\begin{tabular}{|c|c|c|c|}
+\hline
+Usuários cupom semana 1 & Usuários cupom semana 2 & Resultado & Esperado \\ \hline
+11       & 3  & 27.2\%   & \textgreater 25\% \\ \hline
 \end{tabular}
 \caption* {Fonte: Elaborado pelo autor}    
 \end{table}
@@ -319,9 +369,10 @@ Quanto ao teste de consultas à tela de informações do parceiro, dos 90 usuár
 \centering
 \caption{Resultado do teste da hipótese 6}
 \label{tab:resultado_6}
-\begin{tabular}{cccc}
-Usuários & Usuários que consultaram a tela de informações & Resultado & Esperado \\
-90       & 15  & 16.7\%   & \textgreater 30\%
+\begin{tabular}{|c|c|c|c|}
+\hline
+Usuários & Usuários que consultaram a tela de informações & Resultado & Esperado \\ \hline
+90       & 15  & 16.7\%   & \textgreater 30\% \\ \hline
 \end{tabular}
 \caption* {Fonte: Elaborado pelo autor}    
 \end{table}
@@ -406,9 +457,10 @@ O resultado na gelateria Casa Elli foi bastante satisfatório, foram gerados 30 
 \centering
 \caption{Resultado do teste 7 na Gelateria Casa Elli}
 \label{tab:resultado_7_casa_elli_a}
-\begin{tabular}{cccc}
-Novos Clientes & Preço Cheio & Desconto & Vendas Recursivas \\
-24             & 15          & 4        & 2   
+\begin{tabular}{|c|c|c|c|}
+\hline
+Novos Clientes & Preço Cheio & Desconto & Vendas Recursivas \\ \hline
+24             & 15          & 4        & 2   \\ \hline
 \end{tabular}
 \caption* {Fonte: Elaborado pelo autor}    
 \end{table}
@@ -422,9 +474,10 @@ Como a gelateria estava usufruindo da tecnologia de beacons, sua mensalidade cus
 \centering
 \caption{Análise do teste 7 na Gelateria Casa Elli}
 \label{tab:resultado_7_casa_elli_b}
-\begin{tabular}{ccc}
-Resultado & Mensalidade & Retorno do Investimento \\
-286             & 99          &   2.88
+\begin{tabular}{|c|c|c|}
+\hline
+Resultado & Mensalidade & Retorno do Investimento \\ \hline
+286             & 99          &   2.88 \\ \hline
 \end{tabular}
 \caption* {Fonte: Elaborado pelo autor}    
 \end{table}
@@ -433,15 +486,16 @@ Apesar do resultado positivo, a dona da loja ainda não estava disposta a pagar 
 
 \subsubsection{Sonheria Dulca}
 \label{cha:resultado_sonheria_dulca}
-O resultado na Sonheria Dulca também foi bem positivo, foram gerados 21 cupons sendo 19 deles utilizados, onde 18 foram utilizados por novos clientes e 1 utilizado por um cliente antigo. Como mencionado anteriormente, a oferta disponiblizada foi de "Compre 2 sonhos pague 1", na época cada sonho custava R\$10, ou seja, o preço cheio seria de R\$20 e o desconto seria de R\$10, como mostra a \autoref{tab:resultado_7_sonheria_dulca_a}
+O resultado na Sonheria Dulca também foi bem positivo, foram gerados 21 cupons sendo 19 deles utilizados, onde 18 foram utilizados por novos clientes e 1 foi usufruído por um cliente antigo. Como mencionado anteriormente, a oferta disponiblizada foi de "Compre 2 sonhos pague 1", na época cada sonho custava R\$10, ou seja, o preço cheio seria de R\$20 e o desconto seria de R\$10, como mostra a \autoref{tab:resultado_7_sonheria_dulca_a}
 
 \begin{table}[H]
 \centering
 \caption{Resultado do teste 7 na Sonheria Dulca}
 \label{tab:resultado_7_sonheria_dulca_a}
-\begin{tabular}{cccc}
-Novos Clientes & Preço Cheio & Desconto & Vendas Recursivas \\
-18             & 20          & 10        & 1   
+\begin{tabular}{|c|c|c|c|}
+\hline
+Novos Clientes & Preço Cheio & Desconto & Vendas Recursivas \\ \hline
+18             & 20          & 10        & 1   \\ \hline
 \end{tabular}
 \caption* {Fonte: Elaborado pelo autor}    
 \end{table}
@@ -455,9 +509,10 @@ Assim como a Gelateria, a Sonheria também utilizava a tecnologia de beacons, po
 \centering
 \caption{Análise do teste 7 na Sonheria Dulca}
 \label{tab:resultado_7_sonheria_dulca_b}
-\begin{tabular}{ccc}
-Resultado & Mensalidade & Retorno do Investimento \\
-190             & 99          &   1.91
+\begin{tabular}{|c|c|c|}
+\hline
+Resultado & Mensalidade & Retorno do Investimento \\ \hline
+190             & 99          &   1.91 \\ \hline
 \end{tabular}
 \caption* {Fonte: Elaborado pelo autor}    
 \end{table}
@@ -473,9 +528,10 @@ No caso da Tisu Store, a oferta do sapatênis com desconto de R\$100 teve 3 cupo
 \centering
 \caption{Resultado do teste 7 na Tisu Store}
 \label{tab:resultado_7_tisu_store_a}
-\begin{tabular}{cccc}
-Novos Clientes & Preço Cheio & Desconto & Vendas Recursivas \\
-0             & 299          & 100        & 0   
+\begin{tabular}{|c|c|c|c|}
+\hline
+Novos Clientes & Preço Cheio & Desconto & Vendas Recursivas \\ \hline
+0             & 299          & 100        & 0 \\  \hline
 \end{tabular}
 \caption* {Fonte: Elaborado pelo autor}    
 \end{table}
@@ -487,9 +543,10 @@ Aplicando os números acima na fórmula mencionada na \autoref{cha:hipotese_7}, 
 \centering
 \caption{Análise do teste 7 na Tisu Store}
 \label{tab:resultado_7_tisu_store_b}
-\begin{tabular}{ccc}
-Resultado & Mensalidade & Retorno do Investimento \\
-0             & 99          &   0
+\begin{tabular}{|c|c|c|}
+\hline
+Resultado & Mensalidade & Retorno do Investimento \\ \hline
+0             & 99          &   0 \\ \hline
 \end{tabular}
 \caption* {Fonte: Elaborado pelo autor}    
 \end{table}
@@ -498,3 +555,31 @@ Como era de se esperar com esse resultado tão ruim o dono da loja não mostrou 
 
 \section{Listar Lições Aprendidas}
 \label{cha:listar_licoes_aprendidas}
+Nesta seção serão detalhados os aprendizados realizados durante os ciclos para testar as hipóteses de valor da Beeconnect.
+
+\subsection{Primeiro Ciclo}
+\label{cha:primeiro_ciclo}
+Durante o mutirão de vendas a equipe notou que se tivesse levado uma câmera digital ou levado um cartão de memória para conseguir as fotos dos produtos de uma loja seria muito mais rápido de integrar com novos varejistas.
+O fato de levar os beacons para apresentá-los no mutirão foi um fator relevante para mostrar o diferencial do produto. As equipes que não levaram o aparelho tiveram um desempenho pior que as demais.
+Para que os varejistas entendessem melhor sobre o que aplicativo estava tentando oferecer os membros utilizaram termos como "o aplicativo é como um jornal do bairro no celular", "o aplicativo é uma extensão da vitrine física no celular", "trabalhamos com marketing digital". Tal estratégia pareceu funcionar bem.
+
+Todos as lojas que estavam no aplicativo não estavam pagando pelo uso do serviço. Uma maneira de alavancar a parceria foi pedir para que as lojas postassem em suas páginas do Facebook dizendo que elas estavam fazendo parte da Beeconnect, conforme ilustrado na \autoref{fig:paulista_burger}.
+
+\begin{figure}[H]
+\caption{Post da Página do Paulista Burger}
+\centerline{\includegraphics[width=0.8\textwidth]{img/paulista_burger}}
+\label{fig:paulista_burger}
+\caption* {Fonte: https://www.facebook.com/paulistaburger/}
+\end{figure}
+
+A publicação paga no \textit{Facebook} tendo como público-alvo uma determinada página não pareceu funcionar tão bem, a conversão foi relativamente alta se comparar com a média de mercado. Entretanto, o alto custo por download deixa inviável tal iniciativa.
+
+Os resultados quanto a retenção dos clientes foi melhor que o esperado, entretanto deve-se medir ainda mais a retenção no decorrer de meses.
+
+\subsection{Segundo Ciclo}
+\label{cha:segundo_ciclo}
+O segundo ciclo buscou responder se os lojistas iram pagar pelo uso do serviço do aplicativo. Apesar de nenhum parceiro ter se disposto a desembolsar uma quantia mensal para usufruir da plataforma a equipe tirou aprendizados importantes desse teste.
+
+O primeiro aprendizado foi que o setor de comidas e bebidas apresentou-se como um nicho mais fácil de conseguir novos usuários para o aplicativo. Dado que o valor médio do produto é mais baixo, fica mais fácil o primeiro contato do usuário com o aplicativo, o cliente já vê o benefício muito mais rápido.
+
+A equipe pensou que talvez um outro meio de conseguir que os varejistas paguem talvez seja cobrar também uma taxa a mais pela administração de campanhas no aplicativo. Isso se justifica pelo motivo que muitos não queriam pagar pela mensalidade pelo fato da plataforma ser auto gerida e eles não queriam gastar tempo com gerenciamento da plataforma.
