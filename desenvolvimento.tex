@@ -14,7 +14,7 @@ Até o momento em que os testes foram realizados a Beeconnect contava com cerca 
 
 Os principais desafios da Beeconnect são:
 \begin{itemize}
-\item Crescer a base de lojas pagantes dentro do aplicativo.
+\item Crescer a base de lojas pagantes do aplicativo.
 \item Crescer a base de usuários de forma barata.
 \end{itemize}
 
@@ -41,7 +41,7 @@ Os segmentos de clientes para o aplicativo são:
 \item Varejistas de lojas físicas, que serão tratados daqui em diante como "Lojas": 
 \item Frequentadores de lojas físicas que gostam de descontos, que serão tratados aqui em diante como "Usuários": 
 \end{itemize}
-Deste modo verificou-se que o produto atende dois segmentos distintos porém dependentes, típico de um mercado Multilateral. Por exemplo: sem uma boa diversidade de Lojas dentro do aplicativo não há muitas opções de descontos para os Usuários.
+Deste modo verificou-se que o produto atende dois segmentos distintos porém dependentes, típico de um mercado Multilateral. Por exemplo: sem uma boa diversidade de Lojas participantes no aplicativo não há muitas opções de descontos para os Usuários.
 
 \subsection{Proposição de Valor}
 \label{cha:proposicao_de_valor}
@@ -61,7 +61,7 @@ Dado que as Lojas serão os clientes pagantes e o número é bem menor que o de 
 \label{cha:canais}
 Os principais canais são:
 \begin{itemize}
-\item Website: com o \textit{site} https://app.beeconnect.com.br/ é possível atender tanto o usuário quanto o lojista. Nele o lojista pode fazer fazer o gerenciamento das campanhas dentro do aplicativo. Já o usuário pode saber mais sobre o aplicativo.
+\item Website: com o \textit{site} https://app.beeconnect.com.br/ é possível atender tanto o usuário quanto o lojista. Nele o lojista pode fazer fazer o gerenciamento das campanhas que irão aparecer no aplicativo. Já o usuário pode saber mais sobre o aplicativo.
 \item Facebook: a página do aplicativo no Facebook, https://www.facebook.com/beeconnectbr/, foi feita com o intuito de conseguir fazer campanhas para conseguir mais usuários para o aplicativo, mas também é um canal de interação com as Lojas dado que é possível, por exemplo, mencionar a loja em um publicação da página da Beeconnect.
 \item Relações Públicas: dado que a BC faz parte do grupo TM que possui uma assessoria de relações públicas há chances da BC aparecer em reportagens.
 \item Lojas de Aplicativos: as lojas de aplicativos \textit{App Store} do sistema operacional iOS e \textit{Play Store} do sistema operacional Android são de extrema importância pois são nelas que o usuário consegue baixar o aplicativo para o celular. 
@@ -125,12 +125,12 @@ Dada a situação inicial da empresa modelada no Canvas de Modelo de Negócio e 
 Segundo a literatura o principal problema de uma startup é construir um produto que ninguém quer. Em outras palavras, o maior problema é o produto construído ou serviço prestado não gerar valor para seu cliente.
 Ficou evidente que era urgente verificar se o aplicativo gerava valor para seus usuários. Baseando-se nas métricas pirata de \citeonline{mcclure2007startup}, na análise de coorte de \citeonline{leanstartup} e no Canvas de Modelo de Negócio, nos itens Segmentos de Clientes e Proposição da Valor, foram elaboradas as seguintes hipóteses:
 \begin{itemize}
-\item Hipótese 1: Varejistas de lojas físicas tem interesse num novo canal de relacionamento com os clientes.
-\item Hipótese 2: Varejistas de lojas físicas tem interesse em fidelizar o cliente.
-\item Hipótese 3: Post no \textit{Facebook} para simpatizantes da marca é um meio barato e efetivo de adquirir clientes.
-\item Hipótese 4: É fácil de gerar cupons na primeira semana de uso do aplicativo.
-\item Hipótese 5: Os usuários que geraram cupom utilizam o aplicativo na segunda semana.
-\item Hipótese 6: Clientes que gostam de desconto tem interesse em fácil acesso às informações das lojas físicas.
+\item Hipótese 1: Varejistas de lojas físicas tem interesse num novo canal de relacionamento com os clientes. O objetivo era verificar se os varejistas estavam interessados em se comunicar com seus clientes através de notificações em \textit{smartphone} além dos canais tradicionais como email, telefone, panfletos entre outros.
+\item Hipótese 2: Varejistas de lojas físicas tem interesse em fidelizar o cliente. O objetivo era testar se os varejistas estavam dispostos a dar algum benefício aos seus clientes antigos para que eles voltassem cada vez mais às suas lojas.
+\item Hipótese 3: Post no \textit{Facebook} para simpatizantes da marca é um meio barato e efetivo de adquirir clientes. O teste de tal hipótese visava verificar se o \textit{Facebook} seria um bom meio de conseguir novos usuários para o aplicativo dado que o crescimento rápido da base de usuários de um modo barato era de extrema importância para o sucesso do negócio.
+\item Hipótese 4: É fácil de gerar cupons na primeira semana de uso do aplicativo. Tal hipótese visava testar a questão da Ativação do usuário apontada por \citeonline{mcclure2007startup}. Para a equipe da Beeconnect o usuário só era considerado ativo se ele tivesse gerado pelo menos um cupom. Infelizmente devido a falta de integração com os sistemas de vendas dos varejistas impossível a verificação automática se o usuário havia de fato usufruído do cupom de desconto.
+\item Hipótese 5: Os usuários que geraram cupom utilizam o aplicativo na segunda semana. O intuito de verificar essa hipótese baseia-se no conceito de Retenção do usuário mencionado tanto por \citeonline{mcclure2007startup} como por \citeonline{leanstartup}. O usuário só seria considerado retido se ele estivesse gerando cupons constantemente no aplicativo.
+\item Hipótese 6: Clientes que gostam de desconto tem interesse em fácil acesso às informações das lojas físicas. Dado o contexto que os usuários do aplicativo são frequentadores de lojas físicas a equipe da Beeconnect achou que seria útil construir uma página com informações sobre a loja como localização com integração com o sistema do \textit{Google Maps} e inclusive com um que levava ao GPS do \textit{smartphone}. Tais funcionalidades foram uma das que mais demandaram tempo do time de desenvolvimento sendo que não houve nenhuma demanda clara por parte dos usuários. O objetivo seria testar se os usuários realmente utilizariam essa funcionalidade ou se ela foi feita em vão. 
 \end{itemize}
 
 \section{Desenhar Testes de Hipóteses}
@@ -140,24 +140,24 @@ Uma vez que as hipóteses foram elaboradas foi necessário estruturar a maneira 
 \subsection{Hipótese 1}
 \label{cha:hip_1}
 Para a hipótese "Varejistas de lojas físicas tem interesse num novo canal de relacionamento com os clientes" o teste proposto foi organizar um mutirão de vendas e sair para a rua, na região dos Jardins devido a proximidade com o escritório da Beeconnect e tentar vender o serviço. A métrica de sucesso definida foi:
-\[ \dfrac{C}{LV} > 10\%\]
+\[ \dfrac{NLP}{LV} > 10\%\]
 
 Onde: 
 \begin{itemize}
-\item C: é o número de contratações.
+\item NLP: é o número de novas lojas parceiras que foram adquiridas durante o mutirão de vendas.
 \item LV: é o número de lojas visitadas durante o mutirão de vendas.
 \end{itemize}
 
 \subsection{Hipótese 2}
 \label{cha:hip_2}
-Para a hipótese "Varejistas de lojas físicas tem interesse em fidelizar o cliente" os vendedores da Beeconnect deveriam ligar para os varejistas que já estavam dentro do aplicativo e propor que eles oferecessem pelo um produto com desconto exclusivo para o aplicativo de formar a fidelizar os clientes. Nesse caso a métrica de sucesso definida foi:
+Para a hipótese "Varejistas de lojas físicas tem interesse em fidelizar o cliente" os vendedores da Beeconnect deveriam ligar para os varejistas que já estavam participando no aplicativo e propor que eles oferecessem pelo um produto com desconto exclusivo para o aplicativo de formar a fidelizar os clientes. Nesse caso a métrica de sucesso definida foi:
 
 \[\dfrac{LCD}{LP} > 40\%\]
 
 Onde: 
 \begin{itemize}
 \item LCD: é o número de lojas que disponibilizaram pelo menos um cupom de desconto exclusivo.
-\item LP: é o número de lojas parceiras dentro do aplicativo.
+\item LP: é o número de lojas participantes no aplicativo, ou seja, lojas que já estavam com pelo menos alguma campanha disponível no app.
 \end{itemize}
 
 Para as demais hipóteses o teste proposto foi analisar um certo grupo de usuários e verificar como eles se comportariam com o passar do tempo. 
@@ -172,9 +172,9 @@ CAC < R\$1,00 \\
 
 Onde: 
 \begin{itemize}
-\item CAC: é o custo de aquisição de um usuário.
+\item CAC: é o custo de aquisição de um usuário. É o custo de marketing para conseguir um novo usuário do aplicativo. Um dos grandes objetivos das startups é ter um CAC menor que o valor do ciclo de vida do cliente que basicamente é todo o valor gerado pelo cliente durante o uso do aplicativo.
 \item D: é o número de downloads do aplicativo advindos do post no \textit{Facebook}.
-\item AP: é o alcance dos post, ou seja, quantas pessoas viram a publicação.
+\item AP: é o alcance da publicação, ou seja, quantas pessoas diferentes viram a publicação feita no Facebook. O grande desafio é fazer com que as pessoas interajam com a publicação paga, pois a cada comentário, curtida e compartilhamento a publicação ganha um impulso maior, ou seja, ela é exibida para mais pessoas a um custo menor. Tudo isso ocorre porque o algoritmo do Facebook interpreta que o post possui um conteúdo relevante e interessante para seus usuários, algo que transcende o simples marketing.
 \end{itemize}
 
 \subsection{Hipótese 4}
@@ -202,7 +202,7 @@ Onde:
 
 \subsection{Hipótese 6}
 \label{cha:hip_6}
-E para testar a hipótese "Clientes que gostam de desconto tem interesse em fácil acesso às informações das lojas físicas" seria necessário utilizar a ferramenta \textit{Google Analytics} para checar quantas pessoas dentro desse grupo de usuários consultaram a página de informação da loja física dentro do aplicativo, ilustrada na \autoref{fig:info_parceiros}. Portanto a métrica utilizada para checar tal hipótese foi:
+E para testar a hipótese "Clientes que gostam de desconto tem interesse em fácil acesso às informações das lojas físicas" seria necessário utilizar a ferramenta \textit{Google Analytics} para checar quantas pessoas dentro desse grupo de usuários consultaram a página de informação da loja física no aplicativo, ilustrada na \autoref{fig:info_parceiros}. Portanto a métrica utilizada para checar tal hipótese foi:
 \[\dfrac{UPI}{D} > 30\%\]
 
 Onde: 
@@ -244,7 +244,7 @@ Durante o mutirão de vendas os membros da equipe tentaram vender primeiro o pla
 
 \subsection{Teste da hipótese 2}
 \label{cha:teste_2}
-Para o teste da hipótese 2, que foi realizado dois dias após o mutirão de vendas, o time comercial da startup ligou para todos os varejistas que estavam dentro do aplicativo para perguntar se eles estavam dispostos a dar pelo menos um desconto exclusivo no aplicativo.
+Para o teste da hipótese 2, que foi realizado dois dias após o mutirão de vendas, o time comercial da startup ligou para todos os varejistas que estavam participando no aplicativo para perguntar se eles estavam dispostos a dar pelo menos um desconto exclusivo no aplicativo.
 
 \subsection{Teste da hipótese 3}
 \label{cha:teste_3}
@@ -363,7 +363,7 @@ Usuários cupom semana 1 & Usuários cupom semana 2 & Resultado & Esperado \\ \h
 
 \subsection{Resultado do Teste da hipótese 6}
 \label{cha:resultado_6}
-Quanto ao teste de consultas à tela de informações do parceiro, dos 90 usuários que baixaram o aplicativo, 15 consultaram ao menos uma vez essa tela durante as duas semanas de monitoramento, cujo resultado dá aproximadamente 17\%, muito aquém dos 30\% esperados, como mostra a \autoref{tab:resultado_6}.
+Quanto ao teste de consultas à tela de informações do parceiro, dos 90 usuários que baixaram o aplicativo, 15 consultaram ao menos uma vez essa tela durante as duas semanas de monitoramento, cujo resultado dá aproximadamente 17\%, muito abaixo dos 30\% esperados, como mostra a \autoref{tab:resultado_6}. Pode-se concluir então que a tela com a funcionalidade de informações do parceiro foi em vão e que talvez o tempo dos desenvolvedores poderia ser focado em outras funcionalidades mais importantes. 
 
 \begin{table}[H]
 \centering
@@ -377,7 +377,26 @@ Usuários & Usuários que consultaram a tela de informações & Resultado & Espe
 \caption* {Fonte: Elaborado pelo autor}    
 \end{table}
 
-Dados os resultados dos testes o autor decidiu iterar pelo ciclo mais uma vez para aprender mais sobre o modelo de negócio da startup.
+\section{Listar Lições Aprendidas do Primeiro Ciclo}
+\label{cha:listar_licoes_aprendidas}
+Durante o mutirão de vendas a equipe notou que se tivesse levado uma câmera digital ou levado um cartão de memória para conseguir as fotos dos produtos de uma loja seria muito mais rápido de integrar com novos varejistas.
+O fato de levar os beacons para apresentá-los no mutirão foi um fator relevante para mostrar o diferencial do produto. As equipes que não levaram o aparelho tiveram um desempenho pior que as demais.
+Para que os varejistas entendessem melhor sobre o que aplicativo estava tentando oferecer os membros utilizaram termos como "o aplicativo é como um jornal do bairro no celular", "o aplicativo é uma extensão da vitrine física no celular", "trabalhamos com marketing digital". Tal estratégia pareceu funcionar bem.
+
+Todos as lojas que estavam no aplicativo não estavam pagando pelo uso do serviço. Uma maneira de alavancar a parceria foi pedir para que as lojas postassem em suas páginas do Facebook dizendo que elas estavam fazendo parte da Beeconnect, conforme ilustrado na \autoref{fig:paulista_burger}.
+
+\begin{figure}[H]
+\caption{Post da Página do Paulista Burger}
+\centerline{\includegraphics[width=0.8\textwidth]{img/paulista_burger}}
+\label{fig:paulista_burger}
+\caption* {Fonte: https://www.facebook.com/paulistaburger/}
+\end{figure}
+
+A publicação paga no \textit{Facebook} tendo como público-alvo uma determinada página não pareceu funcionar tão bem, a conversão foi relativamente alta se comparar com a média de mercado. Entretanto, o alto custo por download deixa inviável tal iniciativa.
+
+Outro aprendizado é de tentar validar se há uma demanda real por uma determinada funcionalidade no aplicativo. Dado que o time de desenvolvimento tem um tempo escasso e valioso o foco deve ser alocar os recursos do time só em funcionalidades que claramente geram valor para seus usuários.
+
+Os resultados quanto a retenção dos clientes foi melhor que o esperado, entretanto deve-se medir ainda mais a retenção no decorrer de meses. Dados os resultados dos testes o autor decidiu iterar pelo ciclo mais uma vez para aprender mais sobre o modelo de negócio da startup.
 
 \section{Mapear estado atual da startup 2}
 \label{cha:mapear_estado_2}
@@ -398,7 +417,7 @@ A partir da evolução na compreensão do modelo de negócio da Beeconnect a equ
 
 \section{Gerar hipóteses sobre a proposta de valor da empresa 2}
 \label{cha:gerar_hipoteses_ 2}
-Uma vez que as seis hipóteses elaboradas no ciclo anterior foram respondidas e o canvas do estado atual foi elaborado, o autor se encontrou novamente com o seu orientador, o professor André Fleury para gerar novas hipóteses sobre a proposta de valor. Os dois concordaram que a próxima etapa seria provar o valor do produto para os lojistas e comprovar se os varejistas estavam dispostos a pagar pelo serviço. Então a sétima hipótese elaborada no decorrer do trabalho de conclusão de curso foi:
+Uma vez que as seis hipóteses elaboradas no ciclo anterior foram respondidas e o canvas do estado atual foi elaborado, o autor se encontrou novamente com o seu orientador para gerar novas hipóteses sobre a proposta de valor. Os dois concordaram que a próxima etapa seria provar o valor do produto para os lojistas e comprovar se os varejistas estavam dispostos a pagar pelo serviço. Então a sétima hipótese elaborada no decorrer do trabalho de conclusão de curso foi:
 \begin{itemize}
 \item Hipótese 7: Os varejistas estão dispostos a pagar pelo serviço.
 \end{itemize}
@@ -553,33 +572,20 @@ Resultado & Mensalidade & Retorno do Investimento \\ \hline
 
 Como era de se esperar com esse resultado tão ruim o dono da loja não mostrou nenhum interesse em pagar pelo serviço e também disse que não iria utilizar a plataforma por conta própria. 
 
-\section{Listar Lições Aprendidas}
-\label{cha:listar_licoes_aprendidas}
-Nesta seção serão detalhados os aprendizados realizados durante os ciclos para testar as hipóteses de valor da Beeconnect.
-
-\subsection{Primeiro Ciclo}
-\label{cha:primeiro_ciclo}
-Durante o mutirão de vendas a equipe notou que se tivesse levado uma câmera digital ou levado um cartão de memória para conseguir as fotos dos produtos de uma loja seria muito mais rápido de integrar com novos varejistas.
-O fato de levar os beacons para apresentá-los no mutirão foi um fator relevante para mostrar o diferencial do produto. As equipes que não levaram o aparelho tiveram um desempenho pior que as demais.
-Para que os varejistas entendessem melhor sobre o que aplicativo estava tentando oferecer os membros utilizaram termos como "o aplicativo é como um jornal do bairro no celular", "o aplicativo é uma extensão da vitrine física no celular", "trabalhamos com marketing digital". Tal estratégia pareceu funcionar bem.
-
-Todos as lojas que estavam no aplicativo não estavam pagando pelo uso do serviço. Uma maneira de alavancar a parceria foi pedir para que as lojas postassem em suas páginas do Facebook dizendo que elas estavam fazendo parte da Beeconnect, conforme ilustrado na \autoref{fig:paulista_burger}.
-
-\begin{figure}[H]
-\caption{Post da Página do Paulista Burger}
-\centerline{\includegraphics[width=0.8\textwidth]{img/paulista_burger}}
-\label{fig:paulista_burger}
-\caption* {Fonte: https://www.facebook.com/paulistaburger/}
-\end{figure}
-
-A publicação paga no \textit{Facebook} tendo como público-alvo uma determinada página não pareceu funcionar tão bem, a conversão foi relativamente alta se comparar com a média de mercado. Entretanto, o alto custo por download deixa inviável tal iniciativa.
-
-Os resultados quanto a retenção dos clientes foi melhor que o esperado, entretanto deve-se medir ainda mais a retenção no decorrer de meses.
-
-\subsection{Segundo Ciclo}
-\label{cha:segundo_ciclo}
+\section{Listar Lições Aprendidas do Segundo Ciclo}
+\label{cha:listar_licoes_aprendidas_segundo_ciclo}
 O segundo ciclo buscou responder se os lojistas iram pagar pelo uso do serviço do aplicativo. Apesar de nenhum parceiro ter se disposto a desembolsar uma quantia mensal para usufruir da plataforma a equipe tirou aprendizados importantes desse teste.
 
 O primeiro aprendizado foi que o setor de comidas e bebidas apresentou-se como um nicho mais fácil de conseguir novos usuários para o aplicativo. Dado que o valor médio do produto é mais baixo, fica mais fácil o primeiro contato do usuário com o aplicativo, o cliente já vê o benefício muito mais rápido.
 
 A equipe pensou que talvez um outro meio de conseguir que os varejistas paguem talvez seja cobrar também uma taxa a mais pela administração de campanhas no aplicativo. Isso se justifica pelo motivo que muitos não queriam pagar pela mensalidade pelo fato da plataforma ser auto gerida e eles não queriam gastar tempo com gerenciamento da plataforma.
+
+\section{O Fim da Beeconnect}
+\label{cha:fim_da_beeconnect}
+Infelizmente não foi possível uma execução sucessiva de outros ciclos para testar novas hipóteses sobre o modelo de negócio da Beeconnect. O conselho da holding Techmob decidiu fechar o projeto com a justificativa que apesar dos aprendizados adquiridos com a Beeconnect, a startup ainda não havia provado o seu modelo de negócio e não parecia haver no horizonte que a situação iria mudar rapidamente.
+
+O sentimento amargo de derrota foi horrível, todo o time ficou desmotivado com a notícia. O grande problema é que não houve um aviso prévio por parte do conselho da holding, a decisão foi repentina, então o time não saiu com um sentimento de dever cumprido, de que tinha tentado com todas as forças todas as alternativas e não estava preparado para tal notícia. Também houve uma sensação no ar que iriam haver demissões.
+
+Apesar das más notícias, o time da startup foi mantido, mas cada um foi suprir uma função diferente dentro da Techmob. Dois membros foram ajudar no time de ciência de dados na Revmob. Três membros foram ajudar no time que desenvolve o software que faz mostrar as propagandas da Revmob nos aplicativos de parceiros. Três membros foram auxiliar no time da Beluga para construir a plataforma de visualização de análise de dados. Outros dois foram auxiliar no time de vendas da Revmob para conseguir mais desenvolvedores para a plataforma. O autor ajudou por um tempo na Revmob integrando com novos parceiros para conseguir disponibilizar as propagandas Revmob em novos aplicativos, depois o desafio que foi lhe proposto foi de ajudar a desenvolver o banco de dados da Beluga.
+
+O fim da Beeconnect de fato chocou a todos que estavam fazendo parte dessa jornada, porque toda equipe acreditava bastante no projeto que poderia revolucionar o varejo de lojas físicas. A empresa era composta por pessoas incríveis e competentes, que por falta da utilização de uma metodologia voltada para desenvolvimento de startups acabou sucumbindo a meramente a um status de projeto engavetado.
