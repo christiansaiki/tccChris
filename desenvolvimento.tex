@@ -125,12 +125,12 @@ Dada a situação inicial da empresa modelada no Canvas de Modelo de Negócio e 
 Segundo a literatura o principal problema de uma startup é construir um produto que ninguém quer. Em outras palavras, o maior problema é o produto construído ou serviço prestado não gerar valor para seu cliente.
 Ficou evidente que era urgente verificar se o aplicativo gerava valor para seus usuários. Baseando-se nas métricas pirata de \citeonline{mcclure2007startup}, na análise de coorte de \citeonline{leanstartup} e no Canvas de Modelo de Negócio, nos itens Segmentos de Clientes e Proposição da Valor, foram elaboradas as seguintes hipóteses:
 \begin{itemize}
-\item Hipótese 1: Varejistas de lojas físicas tem interesse num novo canal de relacionamento com os clientes. O objetivo era verificar se os varejistas estavam interessados em se comunicar com seus clientes através de notificações em \textit{smartphone} além dos canais tradicionais como email, telefone, panfletos entre outros.
-\item Hipótese 2: Varejistas de lojas físicas tem interesse em fidelizar o cliente. O objetivo era testar se os varejistas estavam dispostos a dar algum benefício aos seus clientes antigos para que eles voltassem cada vez mais às suas lojas.
-\item Hipótese 3: Post no \textit{Facebook} para simpatizantes da marca é um meio barato e efetivo de adquirir clientes. O teste de tal hipótese visava verificar se o \textit{Facebook} seria um bom meio de conseguir novos usuários para o aplicativo dado que o crescimento rápido da base de usuários de um modo barato era de extrema importância para o sucesso do negócio.
-\item Hipótese 4: É fácil de gerar cupons na primeira semana de uso do aplicativo. Tal hipótese visava testar a questão da Ativação do usuário apontada por \citeonline{mcclure2007startup}. Para a equipe da Beeconnect o usuário só era considerado ativo se ele tivesse gerado pelo menos um cupom. Infelizmente devido a falta de integração com os sistemas de vendas dos varejistas impossível a verificação automática se o usuário havia de fato usufruído do cupom de desconto.
-\item Hipótese 5: Os usuários que geraram cupom utilizam o aplicativo na segunda semana. O intuito de verificar essa hipótese baseia-se no conceito de Retenção do usuário mencionado tanto por \citeonline{mcclure2007startup} como por \citeonline{leanstartup}. O usuário só seria considerado retido se ele estivesse gerando cupons constantemente no aplicativo.
-\item Hipótese 6: Clientes que gostam de desconto tem interesse em fácil acesso às informações das lojas físicas. Dado o contexto que os usuários do aplicativo são frequentadores de lojas físicas a equipe da Beeconnect achou que seria útil construir uma página com informações sobre a loja como localização com integração com o sistema do \textit{Google Maps} e inclusive com um que levava ao GPS do \textit{smartphone}. Tais funcionalidades foram uma das que mais demandaram tempo do time de desenvolvimento sendo que não houve nenhuma demanda clara por parte dos usuários. O objetivo seria testar se os usuários realmente utilizariam essa funcionalidade ou se ela foi feita em vão. 
+\item Hipótese 1: \textbf{Varejistas de lojas físicas tem interesse num novo canal de relacionamento com os clientes}. O objetivo era verificar se os varejistas estavam interessados em se comunicar com seus clientes através de notificações em \textit{smartphone} além dos canais tradicionais como email, telefone, panfletos entre outros.
+\item Hipótese 2: \textbf{Varejistas de lojas físicas tem interesse em fidelizar o cliente}. O objetivo era testar se os varejistas estavam dispostos a dar algum benefício aos seus clientes antigos para que eles voltassem cada vez mais às suas lojas.
+\item Hipótese 3: \textbf{Post no \textit{Facebook} focando os simpatizantes de uma determinada marca é um meio barato e efetivo de adquirir clientes}. O teste de tal hipótese visava verificar se o \textit{Facebook} seria um bom meio de conseguir novos usuários para o aplicativo dado que o crescimento rápido da base de usuários de um modo barato era de extrema importância para o sucesso do negócio. Já se sabia de antemão que o marketing nessa rede social era um pouco caro, entretanto, a dúvida que restava era se o foco em determinado público ajudaria a aumentar a conversão de modo a reduzir o custo um novo usuário.
+\item Hipótese 4: \textbf{É fácil de gerar cupons na primeira semana de uso do aplicativo}. Tal hipótese visava testar a questão da Ativação do usuário apontada por \citeonline{mcclure2007startup}. Infelizmente, devido a falta de integração com os sistemas de vendas dos varejistas era impossível a verificação automática se o usuário havia de fato \textbf{utilizado} do cupom de desconto. Portanto, para a equipe da Beeconnect o usuário só era considerado ativo se ele tivesse \textbf{gerado} pelo menos um cupom. 
+\item Hipótese 5: \textbf{Os usuários que geraram cupom utilizam o aplicativo na segunda semana}. O intuito de verificar essa hipótese baseia-se no conceito de Retenção do usuário mencionado tanto por \citeonline{mcclure2007startup} como por \citeonline{leanstartup}. O usuário só seria considerado retido se ele estivesse gerando cupons constantemente no aplicativo.
+\item Hipótese 6: \textbf{Clientes que gostam de desconto tem interesse em fácil acesso às informações das lojas físicas}. Dado o contexto que os usuários do aplicativo são frequentadores de lojas físicas a equipe da Beeconnect achou que seria útil construir uma página com informações sobre a loja como localização com integração com o sistema do \textit{Google Maps} e inclusive com um que levava ao GPS do \textit{smartphone}. Tais funcionalidades foram uma das que mais demandaram tempo do time de desenvolvimento sendo que não houve nenhuma demanda clara por parte dos usuários. O objetivo seria testar se os usuários realmente utilizariam essa funcionalidade ou se ela foi feita em vão. 
 \end{itemize}
 
 \section{Desenhar Testes de Hipóteses}
@@ -394,16 +394,16 @@ Todos as lojas que estavam no aplicativo não estavam pagando pelo uso do servi�
 
 A publicação paga no \textit{Facebook} tendo como público-alvo uma determinada página não pareceu funcionar tão bem, a conversão foi relativamente alta se comparar com a média de mercado. Entretanto, o alto custo por download deixa inviável tal iniciativa.
 
-Outro aprendizado é de tentar validar se há uma demanda real por uma determinada funcionalidade no aplicativo. Dado que o time de desenvolvimento tem um tempo escasso e valioso o foco deve ser alocar os recursos do time só em funcionalidades que claramente geram valor para seus usuários.
+Outro aprendizado é de tentar validar se há uma demanda real por uma determinada funcionalidade no aplicativo, como aconteceu com o item da hipótese 6, a tela de informações do parceiro. Dado que o time de desenvolvimento tem um tempo escasso e valioso o foco deve ser alocar os recursos do time só em funcionalidades que claramente geram valor para seus usuários.
 
-Os resultados quanto a retenção dos clientes foi melhor que o esperado, entretanto deve-se medir ainda mais a retenção no decorrer de meses. Dados os resultados dos testes o autor decidiu iterar pelo ciclo mais uma vez para aprender mais sobre o modelo de negócio da startup.
+Os resultados quanto a retenção dos clientes foi melhor que o esperado, entretanto deve-se medir ainda mais a retenção no decorrer de meses. Dados os resultados dos testes o autor decidiu iterar pelo ciclo mais uma vez para aprender mais sobre o modelo de negócio da startup, principalmente na questão se os clientes estariam dispostos a pagar pelo serviço prestado.
 
 \section{Mapear estado atual da startup 2}
 \label{cha:mapear_estado_2}
 A partir da evolução na compreensão do modelo de negócio da Beeconnect a equipe decidiu elaborar um novo Canvas de Modelo Negócio, referenciado na \autoref{fig:canvas_beeconnect_2}, para que ficasse mais fácil de visualizar os novos aprendizados. Só foram feitos alguns ajustes em relação ao canvas inicial nos blocos:
 
 \begin{itemize}
-\item Proposta de Valor: somente houve um ajuste na formulação dos descontos exclusivos para "Cupons de descontos exclusivos".
+\item Proposta de Valor: houve um ajuste na formulação dos descontos exclusivos para "Cupons de descontos exclusivos". Além disso, houve a remoção do item "Fácil acesso a informação das lojas físicas", porque devido aos testes executados no primeiro ciclo ficou claro que tal funcionalidade não gerava valor para os usuários.
 \item Segmentos de Clientes: A modificação feita foi de "Compradores que gostam de descontos" para "Compradores de lojas físicas". O motivo dessa mudança foi porque o aplicativo não quis focar nos compradores de lojas virtuais, e também dado que o aplicativo também tem a função de ser um panfleto digital, aumentar o escopo para compradores de lojas físicas pode aumentar a base de usuários.
 \item Fluxo de Receita: Dada as conversas com os próprios varejistas muitos perguntavam se o usuário teria que pagar alguma quantia para usufruir do aplicativo. A equipe decidiu deixar claro no canvas que o usuário não iria desembolsar nada para utilizar o app.
 \end{itemize}
@@ -413,13 +413,14 @@ A partir da evolução na compreensão do modelo de negócio da Beeconnect a equ
 \centerline{\includegraphics[width=0.8\textwidth]{img/canvas_beeconnect_2}}
 \label{fig:canvas_beeconnect_2}
 \caption* {Fonte: Elaborado pelo autor}
+\caption* {Legenda: As caixas com cores diferentes em relação ao seu bloco são as que sofreram alterações}
 \end{figure}
 
 \section{Gerar hipóteses sobre a proposta de valor da empresa 2}
 \label{cha:gerar_hipoteses_ 2}
 Uma vez que as seis hipóteses elaboradas no ciclo anterior foram respondidas e o canvas do estado atual foi elaborado, o autor se encontrou novamente com o seu orientador para gerar novas hipóteses sobre a proposta de valor. Os dois concordaram que a próxima etapa seria provar o valor do produto para os lojistas e comprovar se os varejistas estavam dispostos a pagar pelo serviço. Então a sétima hipótese elaborada no decorrer do trabalho de conclusão de curso foi:
 \begin{itemize}
-\item Hipótese 7: Os varejistas estão dispostos a pagar pelo serviço.
+\item Hipótese 7: \textbf{Os varejistas estão dispostos a pagar pelo serviço}.
 \end{itemize}
 
 
@@ -436,7 +437,7 @@ Para provar que os varejistas estavam dispostos a pagar pelo serviço do aplicat
 Onde: 
 \begin{itemize}
 \item NC: é o numero de novos clientes.
-\item VC: é o preço cheio de um produto, ou seja, o valor original de um produto.
+\item PC: é o preço cheio de um produto, ou seja, o valor original de um produto.
 \item D: é o valor do desconto aplicado ao produto.
 \item VR: é o número de vendas recursivas, isto é o número de compras repetidas feitas por usuários do aplicativo Beeconnect.
 \item PS: é o preço do serviço cobrado pela Beeconnect, explicado na \autoref{cha:fluxos_de_receita_canvas_bc_1}.
@@ -470,7 +471,7 @@ Após a realização dos testes para confirmar se os varejistas estavam disposta
 
 \subsubsection{Gelateria Casa Elli}
 \label{cha:resultado_casa_elli}
-O resultado na gelateria Casa Elli foi bastante satisfatório, foram gerados 30 cupons sendo utilizados 26, onde 24 novos clientes que acabaram comprando o gelato médio cujo preço era de R\$15, como mencionado na \autoref{cha:teste_hipotese_7}, mas graças ao desconto pelo aplicativo Beeconnect saiu por R\$11. Os outros dois cupons foram utilizados por usuários antigos do aplicativo, ou seja, se encaixaram nas vendas recursivas como mostra a \autoref{tab:resultado_7_casa_elli_a}.
+O resultado na gelateria Casa Elli foi satisfatório, foram gerados 30 cupons sendo utilizados 26, onde 24 novos clientes que acabaram comprando o gelato médio cujo preço era de R\$15, como mencionado na \autoref{cha:teste_hipotese_7}, mas graças ao desconto pelo aplicativo Beeconnect saiu por R\$11. Os outros dois cupons foram utilizados por usuários antigos do aplicativo, ou seja, se encaixaram nas vendas recursivas como mostra a \autoref{tab:resultado_7_casa_elli_a}.
 
 \begin{table}[H]
 \centering
@@ -501,11 +502,13 @@ Resultado & Mensalidade & Retorno do Investimento \\ \hline
 \caption* {Fonte: Elaborado pelo autor}    
 \end{table}
 
-Apesar do resultado positivo, a dona da loja ainda não estava disposta a pagar pelo serviço, ela gostaria de mais tempo para decidir se estava disposta a pagar a quantia. Entretanto, ela disse que utilizaria a plataforma para subir mais campanhas e que daria mais feedbacks para que a equipe conseguisse melhorar ainda mais o produto.
+Apesar do resultado positivo tanto para a gelateria quanto para a Beeconnect, a dona da loja ainda não estava disposta a pagar pelo serviço, ela gostaria de mais tempo para decidir se estava disposta a pagar a quantia. Entretanto, ela disse que utilizaria a plataforma para subir mais campanhas e que daria mais feedbacks para que a equipe conseguisse melhorar ainda mais o produto.
+
+Tal comportamento foi encarado de maneira bastante inesperada pela equipe do aplicativo, que esperava que a varejista já assinasse algum tipo de contrato dizendo que iria pagar pelo serviço disponibilizado pela Beeconnect.
 
 \subsubsection{Sonheria Dulca}
 \label{cha:resultado_sonheria_dulca}
-O resultado na Sonheria Dulca também foi bem positivo, foram gerados 21 cupons sendo 19 deles utilizados, onde 18 foram utilizados por novos clientes e 1 foi usufruído por um cliente antigo. Como mencionado anteriormente, a oferta disponiblizada foi de "Compre 2 sonhos pague 1", na época cada sonho custava R\$10, ou seja, o preço cheio seria de R\$20 e o desconto seria de R\$10, como mostra a \autoref{tab:resultado_7_sonheria_dulca_a}
+O resultado na Sonheria Dulca também foi positivo, foram gerados 21 cupons sendo 19 deles utilizados, onde 18 foram utilizados por novos clientes e 1 foi usufruído por um cliente antigo. Como mencionado anteriormente, a oferta disponiblizada foi de "Compre 2 sonhos pague 1", na época cada sonho custava R\$10, ou seja, o preço cheio seria de R\$20 e o desconto seria de R\$10, como mostra a \autoref{tab:resultado_7_sonheria_dulca_a}
 
 \begin{table}[H]
 \centering
@@ -522,7 +525,9 @@ Novos Clientes & Preço Cheio & Desconto & Vendas Recursivas \\ \hline
 Aplicando os números acima na fórmula mencionada na \autoref{cha:hipotese_7}, surge o resultado abaixo:
 \[[(18 * (20 - 10)) + (1 * (20 - 10))] = 190\]
 
-Assim como a Gelateria, a Sonheria também utilizava a tecnologia de beacons, portanto a mensalidade seria de R\$99/mês. O resultado de R\$190 sem contar com as vendas casadas de água e café foi bem positivo para a loja, como apresenta a \autoref{tab:resultado_7_sonheria_dulca_b}.
+Assim como a Gelateria, a Sonheria também utilizava a tecnologia de beacons, portanto a mensalidade seria de R\$99/mês. O resultado de R\$190 sem contar com as vendas casadas de água e café foi positivo para a loja, como apresenta a \autoref{tab:resultado_7_sonheria_dulca_b}.
+
+O time da Beeconnect ficou bastante preocupado em virtude da falta de interesse dos varejistas resolverem pagar pelo serviço apesar dos resultados positivos. Seria necessário no próximo ciclo de testes de hipótese algum tipo de mudança para que os varejistas não tivessem como negar o pagamento do serviço.
 
 \begin{table}[H]
 \centering
@@ -574,7 +579,7 @@ Como era de se esperar com esse resultado tão ruim o dono da loja não mostrou 
 
 \section{Listar Lições Aprendidas do Segundo Ciclo}
 \label{cha:listar_licoes_aprendidas_segundo_ciclo}
-O segundo ciclo buscou responder se os lojistas iram pagar pelo uso do serviço do aplicativo. Apesar de nenhum parceiro ter se disposto a desembolsar uma quantia mensal para usufruir da plataforma a equipe tirou aprendizados importantes desse teste.
+O segundo ciclo buscou responder se os lojistas iram pagar pelo uso do serviço do aplicativo. Apesar de nenhum parceiro ter se disposto a desembolsar uma quantia mensal para usufruir da plataforma, a equipe tirou aprendizados importantes desse teste.
 
 O primeiro aprendizado foi que o setor de comidas e bebidas apresentou-se como um nicho mais fácil de conseguir novos usuários para o aplicativo. Dado que o valor médio do produto é mais baixo, fica mais fácil o primeiro contato do usuário com o aplicativo, o cliente já vê o benefício muito mais rápido.
 
