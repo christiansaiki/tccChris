@@ -131,7 +131,7 @@
 % --- 
 \usepackage[maxfloats=40]{morefloats}
 \usepackage{float}
-
+\usepackage{pdfpages}
 \usepackage{amsmath}
 \usepackage{multirow}
 % helvetica no titulo dos capitulos
@@ -169,18 +169,10 @@
 \autor{Christian Eduardo de Umeki e Saiki}
 \local{São Paulo, Brasil}
 \data{\today}
-\orientador{Prof. Dr. André Leme Fleury}
-\coorientador{}
-\instituicao{%
-  Universidade de São Paulo
-  \par
-  Escola Politécnica
-  \par
-  Trabalho de Conclusão de Curso}
 \tipotrabalho{Trabalho de Formatura}
 % O preambulo deve conter o tipo do trabalho, o objetivo, 
 % o nome da instituição e a área de concentração 
-\preambulo{Trabalho de Conclusão de Curso apresentado ao Departamento de Engenharia de Produção da Escola Politécnica da Universidade de São Paulo.}
+\preambulo{Trabalho de Formatura apresentado à Escola Politécnica da Universidade de São Paulo para obtenção do Diploma de Engenheiro de Produção.}
 % ---
 \DeclareMathOperator*{\argmax}{arg\,max}
 
@@ -241,7 +233,11 @@
 
 \imprimircapa
 
-\imprimirfolhaderosto
+\imprimirfolhaderosto %falsa folha de rosto
+
+\orientador{Prof. Dr. André Leme Fleury}
+
+\imprimirfolhaderosto*
 
 \input{fichacatalografica}
 %\pagebreak
